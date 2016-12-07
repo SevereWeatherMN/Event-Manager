@@ -40,10 +40,11 @@
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.Location = new System.Drawing.Point(12, 22);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(399, 357);
+            this.richTextBox1.Size = new System.Drawing.Size(399, 80);
             this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "Codename Stratus\nBuild: v0.0.2\nDate: 11/7/2016\nCreated By: SevereWeatherMN Develo" +
+            this.richTextBox1.Text = "Codename Stratus\nBuild: v0.0.5\nDate: 11/7/2016\nCreated By: SevereWeatherMN Develo" +
     "pment Team";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // button1
             // 

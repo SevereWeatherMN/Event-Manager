@@ -6,14 +6,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
+- No unreleased additions.
 
 ### Changed
-- Start versioning based on the current English version at 0.3.0 to help
-translation authors keep things up-to-date.
+- No recent changes.
 
-## 0.0.1 - 2016-12-06
+## 0.0.5 - 2016-12-06
 ### Added
-- Write changes here
+- Settings window now has a functionless GUI
+- Data Archive Creator's browse buttons function properly
 
 [Unreleased]: Unreleased
 [0.0.1]: No location for application yet

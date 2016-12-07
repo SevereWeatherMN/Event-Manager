@@ -26,5 +26,10 @@ namespace WindowsFormsApplication1
         {
             
         }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

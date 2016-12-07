@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.instructionTxt = new System.Windows.Forms.Label();
             this.textBoxUsermane = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,18 +35,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxPsswd = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.buttonSave = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Location = new System.Drawing.Point(337, 107);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Exit";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // instructionTxt
             // 
@@ -112,11 +102,32 @@
             this.label4.TabIndex = 67;
             this.label4.Text = "Password";
             // 
+            // buttonCancel
+            // 
+            this.buttonCancel.Location = new System.Drawing.Point(336, 108);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(75, 23);
+            this.buttonCancel.TabIndex = 68;
+            this.buttonCancel.Text = "Cancel";
+            this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
+            // 
+            // buttonSave
+            // 
+            this.buttonSave.Location = new System.Drawing.Point(255, 107);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(75, 23);
+            this.buttonSave.TabIndex = 69;
+            this.buttonSave.Text = "Save";
+            this.buttonSave.UseVisualStyleBackColor = true;
+            // 
             // settingsWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(424, 135);
+            this.Controls.Add(this.buttonSave);
+            this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBoxPsswd);
             this.Controls.Add(this.label3);
@@ -124,7 +135,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxUsermane);
             this.Controls.Add(this.instructionTxt);
-            this.Controls.Add(this.button1);
             this.Name = "settingsWindow";
             this.Text = "Settings";
             this.Load += new System.EventHandler(this.settingsWindow_Load);
@@ -135,7 +145,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label instructionTxt;
         private System.Windows.Forms.TextBox textBoxUsermane;
         private System.Windows.Forms.Label label1;
@@ -143,5 +152,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxPsswd;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.Button buttonSave;
     }
 }

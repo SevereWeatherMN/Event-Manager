@@ -22,14 +22,8 @@ namespace WindowsFormsApplication1
 
         }
 
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        private void buttonCancel_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            u = 3;
             this.Close();
         }
     }
