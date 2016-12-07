@@ -62,13 +62,20 @@
             this.MediaBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.ExportBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.NetwkBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.somethingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // richTextBox7Media
             // 
             this.richTextBox7Media.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox7Media.Location = new System.Drawing.Point(140, 233);
+            this.richTextBox7Media.Location = new System.Drawing.Point(139, 254);
             this.richTextBox7Media.Name = "richTextBox7Media";
             this.richTextBox7Media.Size = new System.Drawing.Size(226, 20);
             this.richTextBox7Media.TabIndex = 57;
@@ -80,7 +87,7 @@
             // 
             this.richTextBoxExpt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBoxExpt.Location = new System.Drawing.Point(165, 285);
+            this.richTextBoxExpt.Location = new System.Drawing.Point(164, 306);
             this.richTextBoxExpt.Name = "richTextBoxExpt";
             this.richTextBoxExpt.Size = new System.Drawing.Size(201, 20);
             this.richTextBoxExpt.TabIndex = 56;
@@ -91,7 +98,7 @@
             // checkBoxNexrad
             // 
             this.checkBoxNexrad.AutoSize = true;
-            this.checkBoxNexrad.Location = new System.Drawing.Point(26, 98);
+            this.checkBoxNexrad.Location = new System.Drawing.Point(25, 119);
             this.checkBoxNexrad.Name = "checkBoxNexrad";
             this.checkBoxNexrad.Size = new System.Drawing.Size(233, 17);
             this.checkBoxNexrad.TabIndex = 55;
@@ -102,7 +109,7 @@
             // label12
             // 
             this.label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label12.Location = new System.Drawing.Point(10, 347);
+            this.label12.Location = new System.Drawing.Point(9, 368);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(421, 2);
             this.label12.TabIndex = 54;
@@ -122,7 +129,7 @@
             // 
             this.richTextBoxNetwk.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBoxNetwk.Location = new System.Drawing.Point(146, 315);
+            this.richTextBoxNetwk.Location = new System.Drawing.Point(145, 336);
             this.richTextBoxNetwk.Name = "richTextBoxNetwk";
             this.richTextBoxNetwk.Size = new System.Drawing.Size(220, 20);
             this.richTextBoxNetwk.TabIndex = 52;
@@ -133,7 +140,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(13, 318);
+            this.label11.Location = new System.Drawing.Point(12, 339);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(127, 13);
             this.label11.TabIndex = 51;
@@ -154,7 +161,7 @@
             // 
             this.richTextBoxNexrad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBoxNexrad.Location = new System.Drawing.Point(178, 200);
+            this.richTextBoxNexrad.Location = new System.Drawing.Point(177, 221);
             this.richTextBoxNexrad.Name = "richTextBoxNexrad";
             this.richTextBoxNexrad.Size = new System.Drawing.Size(188, 20);
             this.richTextBoxNexrad.TabIndex = 49;
@@ -165,7 +172,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(13, 289);
+            this.label10.Location = new System.Drawing.Point(12, 310);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(146, 13);
             this.label10.TabIndex = 48;
@@ -175,7 +182,7 @@
             // label9
             // 
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label9.Location = new System.Drawing.Point(10, 271);
+            this.label9.Location = new System.Drawing.Point(9, 292);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(421, 2);
             this.label9.TabIndex = 47;
@@ -195,7 +202,7 @@
             // nexradDir
             // 
             this.nexradDir.AutoSize = true;
-            this.nexradDir.Location = new System.Drawing.Point(13, 200);
+            this.nexradDir.Location = new System.Drawing.Point(12, 221);
             this.nexradDir.Name = "nexradDir";
             this.nexradDir.Size = new System.Drawing.Size(159, 13);
             this.nexradDir.TabIndex = 45;
@@ -205,7 +212,7 @@
             // checkBoxMedia
             // 
             this.checkBoxMedia.AutoSize = true;
-            this.checkBoxMedia.Location = new System.Drawing.Point(26, 121);
+            this.checkBoxMedia.Location = new System.Drawing.Point(25, 142);
             this.checkBoxMedia.Name = "checkBoxMedia";
             this.checkBoxMedia.Size = new System.Drawing.Size(218, 17);
             this.checkBoxMedia.TabIndex = 44;
@@ -216,7 +223,7 @@
             // mediaDir
             // 
             this.mediaDir.AutoSize = true;
-            this.mediaDir.Location = new System.Drawing.Point(13, 233);
+            this.mediaDir.Location = new System.Drawing.Point(12, 254);
             this.mediaDir.Name = "mediaDir";
             this.mediaDir.Size = new System.Drawing.Size(117, 13);
             this.mediaDir.TabIndex = 43;
@@ -237,7 +244,7 @@
             // progressBar1
             // 
             this.progressBar1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.progressBar1.Location = new System.Drawing.Point(97, 370);
+            this.progressBar1.Location = new System.Drawing.Point(96, 391);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(332, 23);
             this.progressBar1.TabIndex = 59;
@@ -245,7 +252,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(16, 370);
+            this.button5.Location = new System.Drawing.Point(15, 391);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 58;
@@ -258,7 +265,7 @@
             this.instructionTxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.instructionTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.instructionTxt.Location = new System.Drawing.Point(12, 9);
+            this.instructionTxt.Location = new System.Drawing.Point(11, 30);
             this.instructionTxt.Name = "instructionTxt";
             this.instructionTxt.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.instructionTxt.Size = new System.Drawing.Size(418, 50);
@@ -271,7 +278,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(26, 75);
+            this.checkBox1.Location = new System.Drawing.Point(25, 96);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(177, 17);
             this.checkBox1.TabIndex = 61;
@@ -283,7 +290,7 @@
             // 
             this.richTextBoxStmRpt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBoxStmRpt.Location = new System.Drawing.Point(167, 167);
+            this.richTextBoxStmRpt.Location = new System.Drawing.Point(166, 188);
             this.richTextBoxStmRpt.Name = "richTextBoxStmRpt";
             this.richTextBoxStmRpt.Size = new System.Drawing.Size(199, 20);
             this.richTextBoxStmRpt.TabIndex = 63;
@@ -294,7 +301,7 @@
             // stormReportDir
             // 
             this.stormReportDir.AutoSize = true;
-            this.stormReportDir.Location = new System.Drawing.Point(13, 170);
+            this.stormReportDir.Location = new System.Drawing.Point(12, 191);
             this.stormReportDir.Name = "stormReportDir";
             this.stormReportDir.Size = new System.Drawing.Size(150, 13);
             this.stormReportDir.TabIndex = 62;
@@ -304,7 +311,7 @@
             // label1
             // 
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(8, 68);
+            this.label1.Location = new System.Drawing.Point(7, 89);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(421, 2);
             this.label1.TabIndex = 64;
@@ -313,7 +320,7 @@
             // label2
             // 
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Location = new System.Drawing.Point(10, 148);
+            this.label2.Location = new System.Drawing.Point(9, 169);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(421, 2);
             this.label2.TabIndex = 65;
@@ -322,7 +329,7 @@
             // browseButtonNetwk
             // 
             this.browseButtonNetwk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.browseButtonNetwk.Location = new System.Drawing.Point(372, 315);
+            this.browseButtonNetwk.Location = new System.Drawing.Point(371, 337);
             this.browseButtonNetwk.Name = "browseButtonNetwk";
             this.browseButtonNetwk.Size = new System.Drawing.Size(60, 20);
             this.browseButtonNetwk.TabIndex = 67;
@@ -333,7 +340,7 @@
             // browseButtonExpt
             // 
             this.browseButtonExpt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.browseButtonExpt.Location = new System.Drawing.Point(372, 284);
+            this.browseButtonExpt.Location = new System.Drawing.Point(371, 306);
             this.browseButtonExpt.Name = "browseButtonExpt";
             this.browseButtonExpt.Size = new System.Drawing.Size(60, 20);
             this.browseButtonExpt.TabIndex = 68;
@@ -344,7 +351,7 @@
             // browseButtonSR
             // 
             this.browseButtonSR.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.browseButtonSR.Location = new System.Drawing.Point(372, 166);
+            this.browseButtonSR.Location = new System.Drawing.Point(371, 188);
             this.browseButtonSR.Name = "browseButtonSR";
             this.browseButtonSR.Size = new System.Drawing.Size(60, 20);
             this.browseButtonSR.TabIndex = 69;
@@ -355,7 +362,7 @@
             // browseButtonNexrd
             // 
             this.browseButtonNexrd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.browseButtonNexrd.Location = new System.Drawing.Point(372, 199);
+            this.browseButtonNexrd.Location = new System.Drawing.Point(371, 221);
             this.browseButtonNexrd.Name = "browseButtonNexrd";
             this.browseButtonNexrd.Size = new System.Drawing.Size(60, 20);
             this.browseButtonNexrd.TabIndex = 70;
@@ -366,7 +373,7 @@
             // browseButtonMedia
             // 
             this.browseButtonMedia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.browseButtonMedia.Location = new System.Drawing.Point(372, 233);
+            this.browseButtonMedia.Location = new System.Drawing.Point(371, 255);
             this.browseButtonMedia.Name = "browseButtonMedia";
             this.browseButtonMedia.Size = new System.Drawing.Size(60, 20);
             this.browseButtonMedia.TabIndex = 71;
@@ -374,11 +381,58 @@
             this.browseButtonMedia.UseVisualStyleBackColor = true;
             this.browseButtonMedia.Click += new System.EventHandler(this.browseButtonMedia_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.settingsToolStripMenuItem,
+            this.aboutToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(442, 24);
+            this.menuStrip1.TabIndex = 72;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.somethingToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // settingsToolStripMenuItem
+            // 
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.settingsToolStripMenuItem.Text = "Settings";
+            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // somethingToolStripMenuItem
+            // 
+            this.somethingToolStripMenuItem.Name = "somethingToolStripMenuItem";
+            this.somethingToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.somethingToolStripMenuItem.Text = "Something";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            // 
             // Archive_Builder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(442, 415);
+            this.ClientSize = new System.Drawing.Size(442, 431);
             this.Controls.Add(this.browseButtonMedia);
             this.Controls.Add(this.browseButtonNexrd);
             this.Controls.Add(this.browseButtonSR);
@@ -408,9 +462,13 @@
             this.Controls.Add(this.checkBoxMedia);
             this.Controls.Add(this.mediaDir);
             this.Controls.Add(this.browseBtnMedia);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Archive_Builder";
             this.Text = "Weather Event Archive Compiler";
             this.Load += new System.EventHandler(this.Archive_Builder_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -453,6 +511,12 @@
         private System.Windows.Forms.FolderBrowserDialog MediaBrowserDialog;
         private System.Windows.Forms.FolderBrowserDialog ExportBrowserDialog;
         private System.Windows.Forms.FolderBrowserDialog NetwkBrowserDialog;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem somethingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         //private System.Windows.Forms.Button browseButtonExpt;
         //private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
        //browse buttons dont work on archive builder

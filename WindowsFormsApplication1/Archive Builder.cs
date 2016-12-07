@@ -28,7 +28,7 @@ namespace WindowsFormsApplication1
 
         private void richTextBox8_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -214,6 +214,18 @@ namespace WindowsFormsApplication1
         private void mediaDir_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            settingsWindow sw = new settingsWindow();
+            sw.Show();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            aboutWindow aw = new aboutWindow();
+            aw.Show();
         }
     }
 }
