@@ -116,7 +116,8 @@ namespace WindowsFormsApplication1
 
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            settingsWindow sw = new settingsWindow();
+            sw.Show();
         }
 
         private void browseBtnMedia_Click(object sender, EventArgs e)
@@ -197,6 +198,11 @@ namespace WindowsFormsApplication1
         private void richTextBox1_TextChanged_1(object sender, EventArgs e)
         {
      
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
 
         }
     }

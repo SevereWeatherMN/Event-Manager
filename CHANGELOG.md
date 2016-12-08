@@ -11,6 +11,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - No recent changes.
 
+## 0.0.7 - 2016-12-08
+### Added
+-
+### Removed
+- Storm Report Generator - removed browse button on "Select Network Location"
+### Changed
+- Storm Report Generator - Changed "Select Network Location" to "Enter Network Location
+- Storm Report Generator - Changed Print button on menu bar to a settings button, as print will likely not be used
+- About window - Updated build, finally changed date
+
 ## 0.0.6 - 2016-12-07
 ### Added
 - Toolbar to Archive creator - settings button is functional

@@ -47,10 +47,8 @@
             this.richTextBox5 = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.richTextBox9 = new System.Windows.Forms.RichTextBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
@@ -65,6 +63,7 @@
             this.richTextBox6 = new System.Windows.Forms.RichTextBox();
             this.nameTextBox = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,28 +94,28 @@
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveArchiveToolStripMenuItem_Click);
             // 
             // saveArchiveAsToolStripMenuItem
             // 
             this.saveArchiveAsToolStripMenuItem.Name = "saveArchiveAsToolStripMenuItem";
-            this.saveArchiveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveArchiveAsToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.saveArchiveAsToolStripMenuItem.Text = "Save As...";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click_1);
             // 
             // printToolStripMenuItem
             // 
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.printToolStripMenuItem.Text = "Print";
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.printToolStripMenuItem.Text = "Settings";
             this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
@@ -171,10 +170,10 @@
             // 
             // richTextBox3
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(54, 143);
+            this.richTextBox3.Location = new System.Drawing.Point(59, 143);
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox3.Size = new System.Drawing.Size(376, 20);
+            this.richTextBox3.Size = new System.Drawing.Size(371, 20);
             this.richTextBox3.TabIndex = 9;
             this.richTextBox3.Text = "";
             this.richTextBox3.WordWrap = false;
@@ -243,26 +242,16 @@
             this.label10.Text = "Select Local Export Location:";
             this.toolTip1.SetToolTip(this.label10, "Select a location on your computer to export a storm report.");
             // 
-            // button3
-            // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(369, 327);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(60, 20);
-            this.button3.TabIndex = 29;
-            this.button3.Text = "Browse...";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(15, 366);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(127, 13);
+            this.label11.Size = new System.Drawing.Size(122, 13);
             this.label11.TabIndex = 30;
-            this.label11.Text = "Select Network Location:";
+            this.label11.Text = "Enter Network Location:";
             this.toolTip1.SetToolTip(this.label11, "Select a location on your network to upload a storm report.");
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // richTextBox9
             // 
@@ -270,22 +259,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox9.Location = new System.Drawing.Point(148, 363);
             this.richTextBox9.Name = "richTextBox9";
-            this.richTextBox9.Size = new System.Drawing.Size(216, 20);
+            this.richTextBox9.Size = new System.Drawing.Size(281, 20);
             this.richTextBox9.TabIndex = 31;
             this.richTextBox9.Text = "";
             this.richTextBox9.WordWrap = false;
             this.richTextBox9.TextChanged += new System.EventHandler(this.richTextBox9_TextChanged);
-            // 
-            // button4
-            // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Location = new System.Drawing.Point(369, 362);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(60, 20);
-            this.button4.TabIndex = 32;
-            this.button4.Text = "Browse...";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -387,6 +365,17 @@
             this.label7.Size = new System.Drawing.Size(418, 2);
             this.label7.TabIndex = 42;
             // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Location = new System.Drawing.Point(369, 327);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(60, 20);
+            this.button3.TabIndex = 29;
+            this.button3.Text = "Browse...";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // SSRC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -402,7 +391,6 @@
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.richTextBox9);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button3);
@@ -446,10 +434,8 @@
         private System.Windows.Forms.RichTextBox richTextBox5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.RichTextBox richTextBox9;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ProgressBar progressBar1;
@@ -468,6 +454,7 @@
         private System.Windows.Forms.RichTextBox richTextBox6;
         private System.Windows.Forms.RichTextBox nameTextBox;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button3;
     }
 }
 
