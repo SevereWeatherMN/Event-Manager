@@ -4,12 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## 0.0.8 - 2016-12-13
 ### Added
-- No unreleased additions.
+- Output Filename text box in Archive Builder
+
+### Removed
+-
 
 ### Changed
-- No recent changes.
+- Error discovered in the line that deactivates the browse buttons when the form runs- glitch allowed it to go unnoticed, needs correction
+
 
 ## 0.0.7 - 2016-12-08
 ### Added
