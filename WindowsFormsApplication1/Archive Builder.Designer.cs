@@ -44,7 +44,6 @@
             this.checkBoxMedia = new System.Windows.Forms.CheckBox();
             this.mediaDir = new System.Windows.Forms.Label();
             this.browseBtnMedia = new System.Windows.Forms.Button();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.button5 = new System.Windows.Forms.Button();
             this.instructionTxt = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -52,7 +51,6 @@
             this.stormReportDir = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.browseButtonNetwk = new System.Windows.Forms.Button();
             this.browseButtonExpt = new System.Windows.Forms.Button();
             this.browseButtonSR = new System.Windows.Forms.Button();
             this.browseButtonNexrd = new System.Windows.Forms.Button();
@@ -64,10 +62,11 @@
             this.NetwkBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.somethingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -131,7 +130,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBoxNetwk.Location = new System.Drawing.Point(145, 336);
             this.richTextBoxNetwk.Name = "richTextBoxNetwk";
-            this.richTextBoxNetwk.Size = new System.Drawing.Size(220, 20);
+            this.richTextBoxNetwk.Size = new System.Drawing.Size(285, 20);
             this.richTextBoxNetwk.TabIndex = 52;
             this.richTextBoxNetwk.Text = "";
             this.richTextBoxNetwk.WordWrap = false;
@@ -241,18 +240,9 @@
             this.browseBtnMedia.Text = "Browse...";
             this.browseBtnMedia.UseVisualStyleBackColor = true;
             // 
-            // progressBar1
-            // 
-            this.progressBar1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.progressBar1.Location = new System.Drawing.Point(96, 391);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(332, 23);
-            this.progressBar1.TabIndex = 59;
-            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
-            // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(15, 391);
+            this.button5.Location = new System.Drawing.Point(15, 383);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 58;
@@ -326,17 +316,6 @@
             this.label2.TabIndex = 65;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // browseButtonNetwk
-            // 
-            this.browseButtonNetwk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.browseButtonNetwk.Location = new System.Drawing.Point(371, 337);
-            this.browseButtonNetwk.Name = "browseButtonNetwk";
-            this.browseButtonNetwk.Size = new System.Drawing.Size(60, 20);
-            this.browseButtonNetwk.TabIndex = 67;
-            this.browseButtonNetwk.Text = "Browse...";
-            this.browseButtonNetwk.UseVisualStyleBackColor = true;
-            this.browseButtonNetwk.Click += new System.EventHandler(this.browseButtonNetwk_Click);
-            // 
             // browseButtonExpt
             // 
             this.browseButtonExpt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -386,7 +365,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.settingsToolStripMenuItem,
-            this.aboutToolStripMenuItem});
+            this.aboutToolStripMenuItem,
+            this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(442, 24);
@@ -402,6 +382,20 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
+            // somethingToolStripMenuItem
+            // 
+            this.somethingToolStripMenuItem.Name = "somethingToolStripMenuItem";
+            this.somethingToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.somethingToolStripMenuItem.Text = "Home";
+            this.somethingToolStripMenuItem.Click += new System.EventHandler(this.somethingToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
@@ -416,35 +410,28 @@
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // somethingToolStripMenuItem
+            // helpToolStripMenuItem
             // 
-            this.somethingToolStripMenuItem.Name = "somethingToolStripMenuItem";
-            this.somethingToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.somethingToolStripMenuItem.Text = "Something";
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // Archive_Builder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(442, 431);
+            this.ClientSize = new System.Drawing.Size(442, 419);
             this.Controls.Add(this.browseButtonMedia);
             this.Controls.Add(this.browseButtonNexrd);
             this.Controls.Add(this.browseButtonSR);
             this.Controls.Add(this.browseButtonExpt);
-            this.Controls.Add(this.browseButtonNetwk);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.richTextBoxStmRpt);
             this.Controls.Add(this.stormReportDir);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.instructionTxt);
-            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.richTextBox7Media);
             this.Controls.Add(this.richTextBoxExpt);
@@ -493,7 +480,6 @@
         private System.Windows.Forms.CheckBox checkBoxMedia;
         private System.Windows.Forms.Label mediaDir;
         private System.Windows.Forms.Button browseBtnMedia;
-        private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label instructionTxt;
         private System.Windows.Forms.CheckBox checkBox1;
@@ -501,7 +487,6 @@
         private System.Windows.Forms.Label stormReportDir;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button browseButtonNetwk;
         private System.Windows.Forms.Button browseButtonExpt;
         private System.Windows.Forms.Button browseButtonSR;
         private System.Windows.Forms.Button browseButtonNexrd;
@@ -517,6 +502,7 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem somethingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         //private System.Windows.Forms.Button browseButtonExpt;
         //private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
        //browse buttons dont work on archive builder

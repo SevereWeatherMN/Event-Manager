@@ -205,6 +205,13 @@ namespace WindowsFormsApplication1
         {
 
         }
+
+        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            welcomeWindow ww = new welcomeWindow();
+            ww.Show();
+            this.Hide();
+        }
     }
 }
 

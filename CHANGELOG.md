@@ -4,12 +4,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 0.2.0 - 2016-12-26
+### Added
+- Zip file is produced with name set in settings, all information selected is included
+- Home buttons added under "file" in all forms-they bring you back to the welcome window and work properly
+- Added FTP server functionality, address must be entered in code and files to be transferred is not set up yet
+
+## 0.1.0 - 2016-12-26
+### Added
+- Archive creator now copies selected files to c:/tmp
+- Exit button functions on Archive Creator
+- Minor error fixed due to multiple voids of Archive_Builder_Load
+- New option in settings window: default archive name format
+- Name is assigned to the archive
+
 ## 0.0.8 - 2016-12-13
 ### Added
 - Output Filename text box in Archive Builder
-
-### Removed
--
 
 ### Changed
 - Error discovered in the line that deactivates the browse buttons when the form runs- glitch allowed it to go unnoticed, needs correction
