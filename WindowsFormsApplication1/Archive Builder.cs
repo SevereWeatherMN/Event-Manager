@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Compression;
 
+
 namespace WindowsFormsApplication1
 {
     public partial class Archive_Builder : Form
@@ -20,6 +21,11 @@ namespace WindowsFormsApplication1
         }
 
         private void Archive_Builder_Load(object sender, EventArgs e)
+        {
+            System.IO.Directory.CreateDirectory(@"C:\tmp");
+        }
+
+        private void Archive_Builder_Load (object sender, EventArgs e)
         {
             browseButtonNexrd.Enabled = false;
             browseButtonMedia.Enabled = false;
@@ -179,7 +185,10 @@ namespace WindowsFormsApplication1
 
         private void button5_Click(object sender, EventArgs e)
         {
-        
+
+
+            System.IO.Directory.CreateDirectory(@"C:\tmp\Storm Reports");
+           
         }
 
         private void richTextBox7Media_TextChanged(object sender, EventArgs e)

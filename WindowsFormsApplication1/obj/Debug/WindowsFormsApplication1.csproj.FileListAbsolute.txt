@@ -84,3 +84,16 @@ C:\Users\tycam\Documents\Visual Studio 2013\Projects\Event-Manager\Event-Manager
 C:\Users\tycam\Documents\Visual Studio 2013\Projects\Event-Manager\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\tycam\Documents\Visual Studio 2013\Projects\Event-Manager\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SSRC.resources
 C:\Users\tycam\Documents\Visual Studio 2013\Projects\Event-Manager\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.aboutWindow.resources
+C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Archive_Builder.resources
+C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.welcomeWindow.resources
+C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.settingsWindow.resources
+C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SSRC.resources
+C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
