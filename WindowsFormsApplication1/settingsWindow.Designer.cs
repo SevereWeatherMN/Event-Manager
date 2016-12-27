@@ -114,7 +114,7 @@
             // buttonCancel
             // 
             this.buttonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonCancel.Location = new System.Drawing.Point(337, 188);
+            this.buttonCancel.Location = new System.Drawing.Point(337, 185);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 68;
@@ -125,7 +125,7 @@
             // buttonSave
             // 
             this.buttonSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSave.Location = new System.Drawing.Point(255, 188);
+            this.buttonSave.Location = new System.Drawing.Point(256, 185);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(75, 23);
             this.buttonSave.TabIndex = 69;
@@ -137,7 +137,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(13, 113);
+            this.label5.Location = new System.Drawing.Point(13, 110);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(95, 13);
             this.label5.TabIndex = 70;
@@ -147,14 +147,14 @@
             // label6
             // 
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label6.Location = new System.Drawing.Point(12, 126);
+            this.label6.Location = new System.Drawing.Point(12, 123);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(400, 2);
             this.label6.TabIndex = 71;
             // 
             // textBoxArchName
             // 
-            this.textBoxArchName.Location = new System.Drawing.Point(165, 135);
+            this.textBoxArchName.Location = new System.Drawing.Point(165, 132);
             this.textBoxArchName.Name = "textBoxArchName";
             this.textBoxArchName.Size = new System.Drawing.Size(247, 20);
             this.textBoxArchName.TabIndex = 72;
@@ -163,7 +163,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 138);
+            this.label7.Location = new System.Drawing.Point(13, 135);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(146, 13);
             this.label7.TabIndex = 73;
@@ -173,7 +173,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(13, 164);
+            this.label8.Location = new System.Drawing.Point(13, 161);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(344, 13);
             this.label8.TabIndex = 74;
@@ -181,13 +181,14 @@
             // 
             // toolTip1
             // 
-            this.toolTip1.ToolTipTitle = "Example Name Format: Weather-Event-Archive";
+            this.toolTip1.ToolTipTitle = "Lets each archive have a similar name. Example Name Format: Weather-Event-Archive" +
+    "";
             // 
             // settingsWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(424, 216);
+            this.ClientSize = new System.Drawing.Size(424, 220);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBoxArchName);

@@ -58,5 +58,17 @@ namespace WindowsFormsApplication1.Properties {
                 this["Password"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string FTPAddress {
+            get {
+                return ((string)(this["FTPAddress"]));
+            }
+            set {
+                this["FTPAddress"] = value;
+            }
+        }
     }
 }

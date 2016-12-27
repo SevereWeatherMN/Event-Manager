@@ -97,3 +97,4 @@ C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager\WindowsFormsApplicatio
 C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
 C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.helpWindow.resources

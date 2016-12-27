@@ -11,7 +11,6 @@ using System.Windows.Forms;
 using System.IO.Compression;
 using WindowsFormsApplication1.Properties;
 using System.Net;
-using System.Text;
 
 namespace WindowsFormsApplication1
 {
@@ -38,6 +37,10 @@ namespace WindowsFormsApplication1
             browseButtonNexrd.Enabled = false;
             browseButtonMedia.Enabled = false;
             browseButtonSR.Enabled = false;
+
+            //fils in address box with last used FTP server.
+
+            richTextBoxNetwk.Text = Properties.Settings.Default.FTPAddress;
         }
 
         private void richTextBox8_TextChanged(object sender, EventArgs e)
@@ -233,13 +236,13 @@ namespace WindowsFormsApplication1
             }
             // Declare path to zip and path to zip to.
             string zipDir = @"c:/tmp/";
-            string zipPath = @richTextBoxExpt.Text + "/" + string.Format("{0:yyyy-MM-dd_hh:mm:ss:tt}", DateTime.Now) + Properties.Settings.Default.ArchiveName.ToString() + ".zip";
+            string zipPath = @richTextBoxExpt.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-ss-tt}", DateTime.Now) + Properties.Settings.Default.ArchiveName.ToString() + ".zip";
             //Perform zip.
             ZipFile.CreateFromDirectory(zipDir, zipPath, CompressionLevel.Fastest, false);
 
 
             // Get the object used to communicate with the server.
-            FtpWebRequest request = (FtpWebRequest)WebRequest.Create("ftp://www.contoso.com/test.htm");
+            FtpWebRequest request = (FtpWebRequest)WebRequest.Create(Properties.Settings.Default.FTPAddress.ToString());
             request.Method = WebRequestMethods.Ftp.UploadFile;
 
             // Credentials are taken from settings and are added in.
@@ -260,6 +263,14 @@ namespace WindowsFormsApplication1
             Console.WriteLine("Upload File Complete, status {0}", response.StatusDescription);
 
             response.Close();
+
+            //Save ftp address entered into text box
+
+            Properties.Settings.Default.FTPAddress = richTextBoxNetwk.Text;
+            Properties.Settings.Default.Save();
+
+            //Message Box
+            MessageBox.Show("Operation completed successfully!");
         }
 
         private void richTextBox7Media_TextChanged(object sender, EventArgs e)
@@ -322,7 +333,8 @@ namespace WindowsFormsApplication1
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            helpWindow hw = new helpWindow();
+            hw.Show();
         }
     }
 }

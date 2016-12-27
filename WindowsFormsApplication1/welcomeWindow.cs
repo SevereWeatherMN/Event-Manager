@@ -74,5 +74,11 @@ namespace WindowsFormsApplication1
         {
             this.Close();
         }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            helpWindow hw = new helpWindow();
+            hw.Show();
+        }
     }
 }

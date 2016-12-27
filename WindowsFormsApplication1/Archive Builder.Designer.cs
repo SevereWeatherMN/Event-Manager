@@ -385,14 +385,14 @@
             // somethingToolStripMenuItem
             // 
             this.somethingToolStripMenuItem.Name = "somethingToolStripMenuItem";
-            this.somethingToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.somethingToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.somethingToolStripMenuItem.Text = "Home";
             this.somethingToolStripMenuItem.Click += new System.EventHandler(this.somethingToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -452,7 +452,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Archive_Builder";
-            this.Text = "Weather Event Archive Compiler";
+            this.Text = "Weather Event Archive Builder";
             this.Load += new System.EventHandler(this.Archive_Builder_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

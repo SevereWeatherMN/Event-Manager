@@ -4,7 +4,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## 0.2.0 - 2016-12-26
+## 0.2.1 - 2016-12-27
+### Added
+- Help window has been designed and has all the required information
+- Help buttons now work on all forms
+- Minor changes to output text file in Storm Report Generator
+- Updated date and version in "about" form
+- Printer dialog shows up in help form, however it doesn't print properly
+
+### Changed
+- Fixed nonworking file --> exit buttons
+
+## 0.2.0 - 2016-12-27
 ### Added
 - Zip file is produced with name set in settings, all information selected is included
 - Home buttons added under "file" in all forms-they bring you back to the welcome window and work properly
@@ -14,9 +25,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Archive creator now copies selected files to c:/tmp
 - Exit button functions on Archive Creator
-- Minor error fixed due to multiple voids of Archive_Builder_Load
 - New option in settings window: default archive name format
 - Name is assigned to the archive
+- Added "home" button under file menu to let the user return to the welcome window
+
+### Changed
+- Minor error fixed due to multiple voids of Archive_Builder_Load
 
 ## 0.0.8 - 2016-12-13
 ### Added

@@ -58,5 +58,10 @@ namespace WindowsFormsApplication1
         {
 
         }
+
+        private void textBoxFTP_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
