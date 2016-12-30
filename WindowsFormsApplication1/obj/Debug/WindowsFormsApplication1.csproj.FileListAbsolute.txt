@@ -98,3 +98,17 @@ C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager\WindowsFormsApplicatio
 C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
 C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.helpWindow.resources
+C:\Users\tycam\Documents\GitHub\Event-Manager\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\tycam\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\tycam\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\tycam\Documents\GitHub\Event-Manager\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\tycam\Documents\GitHub\Event-Manager\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\tycam\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\tycam\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.aboutWindow.resources
+C:\Users\tycam\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Archive_Builder.resources
+C:\Users\tycam\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.helpWindow.resources
+C:\Users\tycam\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.welcomeWindow.resources
+C:\Users\tycam\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.settingsWindow.resources
+C:\Users\tycam\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\tycam\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SSRC.resources
+C:\Users\tycam\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache

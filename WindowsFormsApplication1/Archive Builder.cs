@@ -196,13 +196,17 @@ namespace WindowsFormsApplication1
 
         private void button5_Click(object sender, EventArgs e)
         {
+            //Save ftp address entered into text box
+            Properties.Settings.Default.FTPAddress = richTextBoxNetwk.Text;
+            Properties.Settings.Default.Save();
+
             DirectoryInfo dir = new DirectoryInfo(@richTextBox7Media.Text);
             if (!Directory.Exists(@"C:\tmp\Media"))
             {
                 Directory.CreateDirectory(@"C:\tmp\Media");
             }
-            // Get the files in the directory and copy them to the new location.
-
+           
+            // Get the files in the Media Files directory and copy them to the new location.
             FileInfo[] files = dir.GetFiles();
             foreach (FileInfo file in files)
             {
@@ -214,7 +218,8 @@ namespace WindowsFormsApplication1
             {
                 Directory.CreateDirectory(@"C:\tmp\NEXRAD Data");
             }
-            // Get the files in the directory and copy them to the new location.
+
+            // Get the files in the NEXRAD Data directory and copy them to the new location.
             FileInfo[] filez = dire.GetFiles();
             foreach (FileInfo file in filez)
             {
@@ -226,8 +231,8 @@ namespace WindowsFormsApplication1
             {
                 Directory.CreateDirectory(@"C:\tmp\Storm Reports");
             }
-            // Get the files in the directory and copy them to the new location.
 
+            // Get the files in the Storm Reports directory and copy them to the new location.
             FileInfo[] filess = dir.GetFiles();
             foreach (FileInfo file in files)
             {
@@ -236,41 +241,18 @@ namespace WindowsFormsApplication1
             }
             // Declare path to zip and path to zip to.
             string zipDir = @"c:/tmp/";
-            string zipPath = @richTextBoxExpt.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-ss-tt}", DateTime.Now) + Properties.Settings.Default.ArchiveName.ToString() + ".zip";
+            string zipPath = @richTextBoxExpt.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + Properties.Settings.Default.ArchiveName.ToString() + ".zip";
             //Perform zip.
             ZipFile.CreateFromDirectory(zipDir, zipPath, CompressionLevel.Fastest, false);
 
+            using (WebClient client = new WebClient())
+            {
+                client.Credentials = new NetworkCredential(@Properties.Settings.Default.Username.ToString(), @Properties.Settings.Default.Password.ToString());
+                client.UploadFile(@richTextBoxNetwk.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + "_" + Properties.Settings.Default.ArchiveName.ToString() + ".zip", "STOR", @richTextBoxExpt.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + Properties.Settings.Default.ArchiveName.ToString() + ".zip");
+            }
 
-            // Get the object used to communicate with the server.
-            FtpWebRequest request = (FtpWebRequest)WebRequest.Create(Properties.Settings.Default.FTPAddress.ToString());
-            request.Method = WebRequestMethods.Ftp.UploadFile;
-
-            // Credentials are taken from settings and are added in.
-            request.Credentials = new NetworkCredential(Properties.Settings.Default.Username.ToString(), Properties.Settings.Default.Password.ToString());
-
-            // Copy the contents of the file to the request stream.
-            StreamReader sourceStream = new StreamReader("testfile.txt");
-            byte[] fileContents = Encoding.UTF8.GetBytes(sourceStream.ReadToEnd());
-            sourceStream.Close();
-            request.ContentLength = fileContents.Length;
-
-            Stream requestStream = request.GetRequestStream();
-            requestStream.Write(fileContents, 0, fileContents.Length);
-            requestStream.Close();
-
-            FtpWebResponse response = (FtpWebResponse)request.GetResponse();
-
-            Console.WriteLine("Upload File Complete, status {0}", response.StatusDescription);
-
-            response.Close();
-
-            //Save ftp address entered into text box
-
-            Properties.Settings.Default.FTPAddress = richTextBoxNetwk.Text;
-            Properties.Settings.Default.Save();
-
-            //Message Box
-            MessageBox.Show("Operation completed successfully!");
+                //Message Box, will not currently show
+                MessageBox.Show("Operation completed successfully!");
         }
 
         private void richTextBox7Media_TextChanged(object sender, EventArgs e)
@@ -289,7 +271,7 @@ namespace WindowsFormsApplication1
 
         private void richTextBoxNetwk_TextChanged(object sender, EventArgs e)
         {
-
+        
         }
 
         private void label11_Click(object sender, EventArgs e)
