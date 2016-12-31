@@ -4,12 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## 0.2.5 - 2016-12-30
-### IMPORTANT
-- If code is executed at the exact end of a minute, the code may break due to it recieving the current minute each time it saves and retrieves the file
-
+## 0.2.3 - 2016-12-30
 ### Added
-- FTP Uploading works correctly, file name displays time accurate to one minute
+- Improved text output in generated storm reports (note: output text should be uppercase, but is not)
+
+
+### Changed
+- New Storm Report Generator GUI is fully functional, now takes more thourough information input (note: a text box   asking for submitter name still has to be created)
+- Output text file format does not match that of NWS but is usable by scientists 
 
 ## 0.2.1 - 2016-12-27
 ### Added
