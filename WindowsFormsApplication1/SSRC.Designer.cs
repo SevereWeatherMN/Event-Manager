@@ -65,6 +65,12 @@
             this.nameTextBox = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
+            this.buttonReturnFN = new System.Windows.Forms.Button();
+            this.buttonExitFN = new System.Windows.Forms.Button();
+            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip3 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip4 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip5 = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -163,15 +169,17 @@
             this.label2.Size = new System.Drawing.Size(33, 13);
             this.label2.TabIndex = 5;
             this.label2.Text = "Date:";
+            this.toolTip4.SetToolTip(this.label2, "Insert the date here.");
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 111);
+            this.label3.Location = new System.Drawing.Point(15, 114);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 7;
             this.label3.Text = "Name:";
+            this.toolTip5.SetToolTip(this.label3, "The name of the submitter goes here.");
             // 
             // richTextBox2
             // 
@@ -204,6 +212,8 @@
             this.label4.Size = new System.Drawing.Size(38, 13);
             this.label4.TabIndex = 10;
             this.label4.Text = "Event:";
+            this.toolTip3.SetToolTip(this.label4, "Put the general category of the event here (tornado, flood, damaging wind gust, e" +
+        "tc.)");
             // 
             // richTextBox4
             // 
@@ -225,6 +235,7 @@
             this.label5.Size = new System.Drawing.Size(63, 13);
             this.label5.TabIndex = 12;
             this.label5.Text = "Description:";
+            this.toolTip2.SetToolTip(this.label5, "Write your observations here. Be sure to be descriptive.");
             // 
             // richTextBox5
             // 
@@ -284,9 +295,9 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(18, 450);
+            this.button5.Location = new System.Drawing.Point(12, 450);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(125, 32);
             this.button5.TabIndex = 33;
             this.button5.Text = "Finish";
             this.toolTip1.SetToolTip(this.button5, "Compile a storm report and perform the requested data transfer.");
@@ -313,8 +324,8 @@
             this.instructionTxt.Size = new System.Drawing.Size(418, 53);
             this.instructionTxt.TabIndex = 0;
             this.instructionTxt.Text = "You can use this feature to submit storm reports to your server or network drive," +
-    " or export to a local location. Fields can\'t be left blank; be sure to be descri" +
-    "ptive.";
+    " or export to a local location. Fields shouldn\'t be left blank; be sure to be de" +
+    "scriptive.";
             this.instructionTxt.Click += new System.EventHandler(this.instructionTxt_Click);
             // 
             // labelOutputName
@@ -384,12 +395,36 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // buttonReturnFN
+            // 
+            this.buttonReturnFN.Location = new System.Drawing.Point(156, 450);
+            this.buttonReturnFN.Name = "buttonReturnFN";
+            this.buttonReturnFN.Size = new System.Drawing.Size(125, 32);
+            this.buttonReturnFN.TabIndex = 43;
+            this.buttonReturnFN.Text = "Return to Home";
+            this.toolTip1.SetToolTip(this.buttonReturnFN, "Compile a storm report and perform the requested data transfer.");
+            this.buttonReturnFN.UseVisualStyleBackColor = true;
+            this.buttonReturnFN.Click += new System.EventHandler(this.buttonReturn_Click);
+            // 
+            // buttonExitFN
+            // 
+            this.buttonExitFN.Location = new System.Drawing.Point(299, 450);
+            this.buttonExitFN.Name = "buttonExitFN";
+            this.buttonExitFN.Size = new System.Drawing.Size(130, 32);
+            this.buttonExitFN.TabIndex = 44;
+            this.buttonExitFN.Text = "Exit";
+            this.toolTip1.SetToolTip(this.buttonExitFN, "Compile a storm report and perform the requested data transfer.");
+            this.buttonExitFN.UseVisualStyleBackColor = true;
+            this.buttonExitFN.Click += new System.EventHandler(this.buttonExit_Click);
+            // 
             // SSRC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(442, 494);
+            this.Controls.Add(this.buttonExitFN);
+            this.Controls.Add(this.buttonReturnFN);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.richTextBox6);
@@ -416,7 +451,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "SSRC";
-            this.Text = "Storm Report Generator";
+            this.Text = "Field Note Generator";
             this.Load += new System.EventHandler(this.SSRC_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -463,6 +498,12 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.Button buttonReturnFN;
+        private System.Windows.Forms.Button buttonExitFN;
+        private System.Windows.Forms.ToolTip toolTip2;
+        private System.Windows.Forms.ToolTip toolTip3;
+        private System.Windows.Forms.ToolTip toolTip4;
+        private System.Windows.Forms.ToolTip toolTip5;
     }
 }
 

@@ -67,6 +67,8 @@
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buttonExitAB = new System.Windows.Forms.Button();
+            this.buttonReturnAB = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,9 +76,9 @@
             // 
             this.richTextBox7Media.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox7Media.Location = new System.Drawing.Point(139, 254);
+            this.richTextBox7Media.Location = new System.Drawing.Point(145, 256);
             this.richTextBox7Media.Name = "richTextBox7Media";
-            this.richTextBox7Media.Size = new System.Drawing.Size(226, 20);
+            this.richTextBox7Media.Size = new System.Drawing.Size(220, 20);
             this.richTextBox7Media.TabIndex = 57;
             this.richTextBox7Media.Text = "";
             this.richTextBox7Media.WordWrap = false;
@@ -86,9 +88,9 @@
             // 
             this.richTextBoxExpt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBoxExpt.Location = new System.Drawing.Point(164, 306);
+            this.richTextBoxExpt.Location = new System.Drawing.Point(156, 306);
             this.richTextBoxExpt.Name = "richTextBoxExpt";
-            this.richTextBoxExpt.Size = new System.Drawing.Size(201, 20);
+            this.richTextBoxExpt.Size = new System.Drawing.Size(209, 20);
             this.richTextBoxExpt.TabIndex = 56;
             this.richTextBoxExpt.Text = "";
             this.richTextBoxExpt.WordWrap = false;
@@ -97,7 +99,7 @@
             // checkBoxNexrad
             // 
             this.checkBoxNexrad.AutoSize = true;
-            this.checkBoxNexrad.Location = new System.Drawing.Point(25, 119);
+            this.checkBoxNexrad.Location = new System.Drawing.Point(25, 118);
             this.checkBoxNexrad.Name = "checkBoxNexrad";
             this.checkBoxNexrad.Size = new System.Drawing.Size(233, 17);
             this.checkBoxNexrad.TabIndex = 55;
@@ -128,9 +130,9 @@
             // 
             this.richTextBoxNetwk.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBoxNetwk.Location = new System.Drawing.Point(145, 336);
+            this.richTextBoxNetwk.Location = new System.Drawing.Point(139, 337);
             this.richTextBoxNetwk.Name = "richTextBoxNetwk";
-            this.richTextBoxNetwk.Size = new System.Drawing.Size(285, 20);
+            this.richTextBoxNetwk.Size = new System.Drawing.Size(291, 20);
             this.richTextBoxNetwk.TabIndex = 52;
             this.richTextBoxNetwk.Text = "";
             this.richTextBoxNetwk.WordWrap = false;
@@ -139,7 +141,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(12, 339);
+            this.label11.Location = new System.Drawing.Point(6, 340);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(127, 13);
             this.label11.TabIndex = 51;
@@ -160,9 +162,9 @@
             // 
             this.richTextBoxNexrad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBoxNexrad.Location = new System.Drawing.Point(177, 221);
+            this.richTextBoxNexrad.Location = new System.Drawing.Point(187, 222);
             this.richTextBoxNexrad.Name = "richTextBoxNexrad";
-            this.richTextBoxNexrad.Size = new System.Drawing.Size(188, 20);
+            this.richTextBoxNexrad.Size = new System.Drawing.Size(178, 20);
             this.richTextBoxNexrad.TabIndex = 49;
             this.richTextBoxNexrad.Text = "";
             this.richTextBoxNexrad.WordWrap = false;
@@ -171,7 +173,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(12, 310);
+            this.label10.Location = new System.Drawing.Point(6, 309);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(146, 13);
             this.label10.TabIndex = 48;
@@ -201,7 +203,7 @@
             // nexradDir
             // 
             this.nexradDir.AutoSize = true;
-            this.nexradDir.Location = new System.Drawing.Point(12, 221);
+            this.nexradDir.Location = new System.Drawing.Point(22, 225);
             this.nexradDir.Name = "nexradDir";
             this.nexradDir.Size = new System.Drawing.Size(159, 13);
             this.nexradDir.TabIndex = 45;
@@ -222,7 +224,7 @@
             // mediaDir
             // 
             this.mediaDir.AutoSize = true;
-            this.mediaDir.Location = new System.Drawing.Point(12, 254);
+            this.mediaDir.Location = new System.Drawing.Point(22, 259);
             this.mediaDir.Name = "mediaDir";
             this.mediaDir.Size = new System.Drawing.Size(117, 13);
             this.mediaDir.TabIndex = 43;
@@ -242,9 +244,9 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(15, 383);
+            this.button5.Location = new System.Drawing.Point(9, 378);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(127, 32);
             this.button5.TabIndex = 58;
             this.button5.Text = "Finish";
             this.button5.UseVisualStyleBackColor = true;
@@ -255,7 +257,7 @@
             this.instructionTxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.instructionTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.instructionTxt.Location = new System.Drawing.Point(11, 30);
+            this.instructionTxt.Location = new System.Drawing.Point(13, 30);
             this.instructionTxt.Name = "instructionTxt";
             this.instructionTxt.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.instructionTxt.Size = new System.Drawing.Size(418, 50);
@@ -268,11 +270,11 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(25, 96);
+            this.checkBox1.Location = new System.Drawing.Point(25, 95);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(177, 17);
+            this.checkBox1.Size = new System.Drawing.Size(163, 17);
             this.checkBox1.TabIndex = 61;
-            this.checkBox1.Text = "Include Storm Reports in upload";
+            this.checkBox1.Text = "Include Field Notes in upload";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -280,9 +282,9 @@
             // 
             this.richTextBoxStmRpt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBoxStmRpt.Location = new System.Drawing.Point(166, 188);
+            this.richTextBoxStmRpt.Location = new System.Drawing.Point(164, 189);
             this.richTextBoxStmRpt.Name = "richTextBoxStmRpt";
-            this.richTextBoxStmRpt.Size = new System.Drawing.Size(199, 20);
+            this.richTextBoxStmRpt.Size = new System.Drawing.Size(201, 20);
             this.richTextBoxStmRpt.TabIndex = 63;
             this.richTextBoxStmRpt.Text = "";
             this.richTextBoxStmRpt.WordWrap = false;
@@ -291,17 +293,17 @@
             // stormReportDir
             // 
             this.stormReportDir.AutoSize = true;
-            this.stormReportDir.Location = new System.Drawing.Point(12, 191);
+            this.stormReportDir.Location = new System.Drawing.Point(22, 192);
             this.stormReportDir.Name = "stormReportDir";
-            this.stormReportDir.Size = new System.Drawing.Size(150, 13);
+            this.stormReportDir.Size = new System.Drawing.Size(136, 13);
             this.stormReportDir.TabIndex = 62;
-            this.stormReportDir.Text = "Select Storm Report Directory:";
+            this.stormReportDir.Text = "Select Field Note Directory:";
             this.stormReportDir.Click += new System.EventHandler(this.stormReportDir_Click);
             // 
             // label1
             // 
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(7, 89);
+            this.label1.Location = new System.Drawing.Point(12, 80);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(421, 2);
             this.label1.TabIndex = 64;
@@ -310,7 +312,7 @@
             // label2
             // 
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Location = new System.Drawing.Point(9, 169);
+            this.label2.Location = new System.Drawing.Point(9, 171);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(421, 2);
             this.label2.TabIndex = 65;
@@ -319,7 +321,7 @@
             // browseButtonExpt
             // 
             this.browseButtonExpt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.browseButtonExpt.Location = new System.Drawing.Point(371, 306);
+            this.browseButtonExpt.Location = new System.Drawing.Point(370, 306);
             this.browseButtonExpt.Name = "browseButtonExpt";
             this.browseButtonExpt.Size = new System.Drawing.Size(60, 20);
             this.browseButtonExpt.TabIndex = 68;
@@ -385,14 +387,14 @@
             // somethingToolStripMenuItem
             // 
             this.somethingToolStripMenuItem.Name = "somethingToolStripMenuItem";
-            this.somethingToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.somethingToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.somethingToolStripMenuItem.Text = "Home";
             this.somethingToolStripMenuItem.Click += new System.EventHandler(this.somethingToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -417,11 +419,33 @@
             this.helpToolStripMenuItem.Text = "Help";
             this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
+            // buttonExitAB
+            // 
+            this.buttonExitAB.Location = new System.Drawing.Point(304, 378);
+            this.buttonExitAB.Name = "buttonExitAB";
+            this.buttonExitAB.Size = new System.Drawing.Size(127, 32);
+            this.buttonExitAB.TabIndex = 73;
+            this.buttonExitAB.Text = "Exit";
+            this.buttonExitAB.UseVisualStyleBackColor = true;
+            this.buttonExitAB.Click += new System.EventHandler(this.buttonExit_Click);
+            // 
+            // buttonReturnAB
+            // 
+            this.buttonReturnAB.Location = new System.Drawing.Point(156, 378);
+            this.buttonReturnAB.Name = "buttonReturnAB";
+            this.buttonReturnAB.Size = new System.Drawing.Size(127, 32);
+            this.buttonReturnAB.TabIndex = 74;
+            this.buttonReturnAB.Text = "Return to Home";
+            this.buttonReturnAB.UseVisualStyleBackColor = true;
+            this.buttonReturnAB.Click += new System.EventHandler(this.buttonReturnAB_Click);
+            // 
             // Archive_Builder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(442, 419);
+            this.Controls.Add(this.buttonReturnAB);
+            this.Controls.Add(this.buttonExitAB);
             this.Controls.Add(this.browseButtonMedia);
             this.Controls.Add(this.browseButtonNexrd);
             this.Controls.Add(this.browseButtonSR);
@@ -503,6 +527,8 @@
         private System.Windows.Forms.ToolStripMenuItem somethingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.Button buttonExitAB;
+        private System.Windows.Forms.Button buttonReturnAB;
         //private System.Windows.Forms.Button browseButtonExpt;
         //private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
        //browse buttons dont work on archive builder

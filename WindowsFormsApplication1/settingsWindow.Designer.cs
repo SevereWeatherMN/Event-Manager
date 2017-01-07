@@ -89,9 +89,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(13, 55);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
+            this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 65;
-            this.label3.Text = "Username";
+            this.label3.Text = "Username:";
             // 
             // textBoxPsswd
             // 
@@ -107,9 +107,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(13, 84);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 13);
+            this.label4.Size = new System.Drawing.Size(56, 13);
             this.label4.TabIndex = 67;
-            this.label4.Text = "Password";
+            this.label4.Text = "Password:";
             // 
             // buttonCancel
             // 
@@ -165,9 +165,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(13, 135);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(146, 13);
+            this.label7.Size = new System.Drawing.Size(149, 13);
             this.label7.TabIndex = 73;
-            this.label7.Text = "Default Archive Name Format";
+            this.label7.Text = "Default Archive Name Format:";
             // 
             // label8
             // 

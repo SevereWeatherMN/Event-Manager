@@ -4,20 +4,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## 0.2.4 - 2017-1-1
+## 0.2.6 - 2017-1-7
 ### Added
-- Code for storm report generator to upload reports to server-needs further modification
-- Defult numbers now appear in time comboboxes of storm report generator-default time is 12:00 AM
-
-
-## 0.2.3 - 2016-12-30
-### Added
-- Improved text output in generated storm reports (note: output text should be uppercase, but is not)
-
+- Navigation buttons to main forms
+- Tooltips on Field Note Generator
 
 ### Changed
-- New Storm Report Generator GUI is fully functional, now takes more thourough information input (note: a text box   asking for submitter name still has to be created)
-- Output text file format does not match that of NWS but is usable by scientists 
+- Renamed Storm Report Generator to Field Note Generator; this offers a more flexible platform of data collections
+- Issues arose with file compression and management in archive manager
+
+## 0.2.5 - 2016-12-30
+### Added
+- Full functionality to archive builder-uploads work 
+- Settings window has full functionality
+- Minor text output file changes in Storm Report Generator
+
+### Changed
 
 ## 0.2.1 - 2016-12-27
 ### Added

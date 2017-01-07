@@ -200,50 +200,53 @@ namespace WindowsFormsApplication1
             Properties.Settings.Default.FTPAddress = richTextBoxNetwk.Text;
             Properties.Settings.Default.Save();
 
+            // Get the files in the Media Files directory and copy them to the new location.
+
             DirectoryInfo dir = new DirectoryInfo(@richTextBox7Media.Text);
             if (!Directory.Exists(@"C:\tmp\Media"))
             {
                 Directory.CreateDirectory(@"C:\tmp\Media");
             }
-           
-            // Get the files in the Media Files directory and copy them to the new location.
             FileInfo[] files = dir.GetFiles();
-            foreach (FileInfo file in files)
+            foreach (FileInfo cfile in files)
             {
-                string temppath = Path.Combine(@"C:\tmp\Media", file.Name);
-                file.CopyTo(temppath, false);
+                string temppath = Path.Combine(@"C:\tmp\Media", cfile.Name);
+                cfile.CopyTo(temppath, false);
             }
+
+            // Get the files in the NEXRAD Data directory and copy them to the new location.
+
             DirectoryInfo dire = new DirectoryInfo(@richTextBoxNexrad.Text);
             if (!Directory.Exists(@"C:\tmp\NEXRAD Data"))
             {
                 Directory.CreateDirectory(@"C:\tmp\NEXRAD Data");
             }
-
-            // Get the files in the NEXRAD Data directory and copy them to the new location.
             FileInfo[] filez = dire.GetFiles();
-            foreach (FileInfo file in filez)
+            foreach (FileInfo afile in filez)
             {
-                string tempath = Path.Combine(@"C:\tmp\NEXRAD Data", file.Name);
-                file.CopyTo(tempath, false);
+                string tempath = Path.Combine(@"C:\tmp\NEXRAD Data", afile.Name);
+                afile.CopyTo(tempath, false);  
             }
+
+            // Get the files in the Storm Reports directory and copy them to the new location.
+
             DirectoryInfo direc = new DirectoryInfo(@richTextBoxStmRpt.Text);
             if (!Directory.Exists(@"C:\tmp\Storm Reports"))
             {
                 Directory.CreateDirectory(@"C:\tmp\Storm Reports");
             }
-
-            // Get the files in the Storm Reports directory and copy them to the new location.
-            FileInfo[] filess = dir.GetFiles();
-            foreach (FileInfo file in files)
+            FileInfo[] filess = direc.GetFiles();
+            foreach (FileInfo bfile in filess)
             {
-                string temppath = Path.Combine(@"C:\tmp\Storm Reports", file.Name);
-                file.CopyTo(temppath, false);
+                string temppath = Path.Combine(@"C:\tmp\Storm Reports", bfile.Name);
+                bfile.CopyTo(temppath, false);
             }
+
             // Declare path to zip and path to zip to.
-            string zipDir = @"c:/tmp/";
+            string zipDir = @"c:/tmp";
             string zipPath = @richTextBoxExpt.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + Properties.Settings.Default.ArchiveName.ToString() + ".zip";
             //Perform zip.
-            ZipFile.CreateFromDirectory(zipDir, zipPath, CompressionLevel.Fastest, false);
+            ZipFile.CreateFromDirectory(zipDir, zipPath, CompressionLevel.Fastest, true);
 
             using (WebClient client = new WebClient())
             {
@@ -251,7 +254,6 @@ namespace WindowsFormsApplication1
                 client.UploadFile(@richTextBoxNetwk.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + "_" + Properties.Settings.Default.ArchiveName.ToString() + ".zip", "STOR", @richTextBoxExpt.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + Properties.Settings.Default.ArchiveName.ToString() + ".zip");
             }
 
-                //Message Box, will not currently show
                 MessageBox.Show("Operation completed successfully!");
         }
 
@@ -317,6 +319,18 @@ namespace WindowsFormsApplication1
         {
             helpWindow hw = new helpWindow();
             hw.Show();
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void buttonReturnAB_Click(object sender, EventArgs e)
+        {
+            welcomeWindow ww = new welcomeWindow();
+            ww.Show();
+            this.Hide();
         }
     }
 }

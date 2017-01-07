@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="richTextBoxHelp.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
@@ -136,31 +133,34 @@ Welcome to the Weather Event Manager! This Program was designed to help storm ch
 The Welcome window:
 ==================
 
-When the program first runs, the Welcome window is displayed. It offers the user two choices: to generate a storm report, or create a data archive. The first option generates a text file that provides detailed information on a specific weather event (i.e. a funnel cloud sighting). The second option lets the user package and store large amounts of information. More information below. 
+When the program first runs, the Welcome window is displayed. It offers the user two choices: to generate a Field Note, or create a Data Archive. The first option generates a text file that provides detailed information on a specific weather event (i.e. a funnel cloud sighting). The second option lets the user package and store large amounts of information, to organize data representing large scale weather events. More information below. 
 
-The Storm Report Generator:
+The Field Note Generator:
 =======================
 
-The storm report generator simplifies the process of creating storm reports. It asks for all the vital information and writes it to a text file in an easy to understand format. Simply insert the information into each box, select where you want the file to be exported, and click finish. To return to the Welcome window and choose a different option, click the File menu in the upper left corner, and click "home". To print a copy of your storm report, simply click "print" on the toolbar next to the File menu. We do not yet have the option of exporting storm reports to the National Weather Service; however, this feature may become available at some point in the future.
+The Field Note generator simplifies the process of creating storm reports. It asks for all the vital information and writes it to a text file in an easy to understand format. Simply insert the information into each box, select where you want the file to be exported, and click finish. To return to the Welcome window and choose a different option, click the File menu in the upper left corner, and click "home". To print a copy of your Field Note, simply click "print" on the toolbar next to the File menu. We do not yet have the option of exporting storm reports to the National Weather Service; however, this feature may become available at some point in the future.
 
 The Archive Builder:
 =================
 
-The archive builder allows you to package large amounts of weather information at once. When the window opens, select the three check boxes according to the data types you want to package. They do not all have to be selected. Once you have done this, use the browse buttons to find the information you want to package. Then, navigate to where you want the resulting archive to be. You can select a local destination on your computer, or a network destination such as a server or a network drive. In the Network Location box, you would enter an IP adress or an FTP server link. If you have trouble logging in to an FTP server, you may need to navigate to settings to enter and save login credentials.
+The archive builder allows you to package large amounts of weather information at once. When the window opens, select the three check boxes according to the data types you want to package. They do not all have to be selected. Once you have done this, use the browse buttons to find the information you want to package. Then, in the box below, navigate to where you want the resulting archive to be. You can select a local destination on your computer, or a network destination such as a server or a network drive. In the Network Location box, you would enter an IP adress or an FTP server link. If you have trouble logging in to an FTP server, you may need to navigate to settings to enter and save login credentials.
  
 The Settings Window:
 ==================
 
-The Settings Window offers a number of options. 
+The Settings Window offers two main options:
 
 1. You can adjust FTP server login information, so each time you connect to an FTP server you get logged in automatically
 
-2. You can configure a default name format for the archive builder. Each archive it creates will have the date and time at the beggining of the name automatically, but the rest of the name should be specified by the user. This way, the archives all have the same name format and are more organized.
+2. You can configure a default name format for the archive builder. Each archive it creates will have the date and time at the beggining of the name automatically, but the rest of the name can be specified by the user. This way, the archives all have the same name format and are more organized.
 
 Conclusion
 ===========
-Thanks for choosing the weather event manager. We hope you find this information helpful and informative.</value>
+Thanks for choosing the Weather Event Eanager. We hope you find this information helpful and informative.</value>
   </data>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="Help.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 20</value>
   </metadata>
