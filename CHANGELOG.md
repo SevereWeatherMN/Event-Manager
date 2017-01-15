@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 0.2.7 - 2017-1-15
+### Added
+- New Icon: black tornado, blue-green background
+- Adjusted the contents of the help page
+- Adjusted tooltips
+- Added default name format template in settings
+
 ## 0.2.6 - 2017-1-7
 ### Added
 - Navigation buttons to main forms
