@@ -126,3 +126,9 @@ C:\Users\Tanner\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debu
 C:\Users\Tanner\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\Tanner\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SSRC.resources
 C:\Users\Tanner\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager-master\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager-master (March 2017)\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager-master (March 2017)\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager-master (March 2017)\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb

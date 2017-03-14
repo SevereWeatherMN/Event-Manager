@@ -54,6 +54,8 @@
             this.button5 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.buttonReturnFN = new System.Windows.Forms.Button();
+            this.buttonExitFN = new System.Windows.Forms.Button();
             this.instructionTxt = new System.Windows.Forms.Label();
             this.labelOutputName = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
@@ -65,8 +67,6 @@
             this.nameTextBox = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.buttonReturnFN = new System.Windows.Forms.Button();
-            this.buttonExitFN = new System.Windows.Forms.Button();
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip3 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip4 = new System.Windows.Forms.ToolTip(this.components);
@@ -313,6 +313,28 @@
             this.label12.TabIndex = 34;
             this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
+            // buttonReturnFN
+            // 
+            this.buttonReturnFN.Location = new System.Drawing.Point(156, 450);
+            this.buttonReturnFN.Name = "buttonReturnFN";
+            this.buttonReturnFN.Size = new System.Drawing.Size(125, 32);
+            this.buttonReturnFN.TabIndex = 43;
+            this.buttonReturnFN.Text = "Return to Home";
+            this.toolTip1.SetToolTip(this.buttonReturnFN, "Compile a storm report and perform the requested data transfer.");
+            this.buttonReturnFN.UseVisualStyleBackColor = true;
+            this.buttonReturnFN.Click += new System.EventHandler(this.buttonReturn_Click);
+            // 
+            // buttonExitFN
+            // 
+            this.buttonExitFN.Location = new System.Drawing.Point(299, 450);
+            this.buttonExitFN.Name = "buttonExitFN";
+            this.buttonExitFN.Size = new System.Drawing.Size(130, 32);
+            this.buttonExitFN.TabIndex = 44;
+            this.buttonExitFN.Text = "Exit";
+            this.toolTip1.SetToolTip(this.buttonExitFN, "Compile a storm report and perform the requested data transfer.");
+            this.buttonExitFN.UseVisualStyleBackColor = true;
+            this.buttonExitFN.Click += new System.EventHandler(this.buttonExit_Click);
+            // 
             // instructionTxt
             // 
             this.instructionTxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -395,28 +417,6 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // buttonReturnFN
-            // 
-            this.buttonReturnFN.Location = new System.Drawing.Point(156, 450);
-            this.buttonReturnFN.Name = "buttonReturnFN";
-            this.buttonReturnFN.Size = new System.Drawing.Size(125, 32);
-            this.buttonReturnFN.TabIndex = 43;
-            this.buttonReturnFN.Text = "Return to Home";
-            this.toolTip1.SetToolTip(this.buttonReturnFN, "Compile a storm report and perform the requested data transfer.");
-            this.buttonReturnFN.UseVisualStyleBackColor = true;
-            this.buttonReturnFN.Click += new System.EventHandler(this.buttonReturn_Click);
-            // 
-            // buttonExitFN
-            // 
-            this.buttonExitFN.Location = new System.Drawing.Point(299, 450);
-            this.buttonExitFN.Name = "buttonExitFN";
-            this.buttonExitFN.Size = new System.Drawing.Size(130, 32);
-            this.buttonExitFN.TabIndex = 44;
-            this.buttonExitFN.Text = "Exit";
-            this.toolTip1.SetToolTip(this.buttonExitFN, "Compile a storm report and perform the requested data transfer.");
-            this.buttonExitFN.UseVisualStyleBackColor = true;
-            this.buttonExitFN.Click += new System.EventHandler(this.buttonExit_Click);
-            // 
             // SSRC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -450,6 +450,8 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(450, 525);
+            this.MinimumSize = new System.Drawing.Size(450, 525);
             this.Name = "SSRC";
             this.Text = "Field Note Generator";
             this.Load += new System.EventHandler(this.SSRC_Load);
