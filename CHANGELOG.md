@@ -4,12 +4,34 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 0.3.2 - 2017-4-9
+### Added
+- Try-Catch block to account for unavailable network location (More exceptions need to be caught)
+- Obsolete tooltips adjusted to describe field notes instead of storm reports
+- Added icons to forms that didn't have them
+- Named help form "Weather Event Manager Help", no valid name previously entered
+- Added tooltips and more information in settings window to streamline its use
+
+
+## 0.3.1 - 2017-3-13
+### Added
+- Saved input on field note generator
+- FTP Uploading works correctly on field note generator
+
+
+## 0.3.0 - 2017-3-13
+### Added
+- Got uploading on Archive Builder straightened out and finished
+- Got uploading on Field Note Generator straightened out as well (for the most part)
+- Credentials saved in Archive Builder
+
 ## 0.2.7 - 2017-1-15
 ### Added
 - New Icon: black tornado, blue-green background
 - Adjusted the contents of the help page
 - Adjusted tooltips
 - Added default name format template in settings
+- Added source code for printing, doesn't work quite yet
 
 ## 0.2.6 - 2017-1-7
 ### Added
