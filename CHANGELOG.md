@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 0.4.0 - 2017-9-24
+### Added
+- Automatic location detection to add to text file in Field Note Generator. Must have location service enabled to function correctly.
+- Automatic time detection - takes system time and adds to text file. time zone should be selected in settings. Doesn't write to text file yet, will in the next update.
+
+### Changed
+- Modified Field Note Generator GUI, more updates pending for better workflow
+
+## 0.3.3 - 2017-4-10
+### Added
+- Attempted to prevent overwriting field notes that already exist on the server - however, this doesn't function properly yet 
+
+### Changed
+- Adjusted descriptions in Weather Event Archive Builder and Field Note Generator
+- Adjusted tooltips in archive builder
+
 ## 0.3.2 - 2017-4-9
 ### Added
 - Try-Catch block to account for unavailable network location (More exceptions need to be caught)
@@ -92,7 +108,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Removed
 - Storm Report Generator - removed browse button on "Select Network Location"
 ### Changed
-- Storm Report Generator - Changed "Select Network Location" to "Enter Network Location
+- Storm Report Generator - Changed "Select Network Location" to "Enter Network Location"
 - Storm Report Generator - Changed Print button on menu bar to a settings button, as print will likely not be used
 - About window - Updated build, finally changed date
 
