@@ -4,10 +4,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 0.4.1 - 2017-9-24
+### Added
+
+### Changed
+- Formatted Time Zone List, does not yet update text file, will soon
+
+
 ## 0.4.0 - 2017-9-24
 ### Added
 - Automatic location detection to add to text file in Field Note Generator. Must have location service enabled to function correctly.
-- Automatic time detection - takes system time and adds to text file. time zone should be selected in settings. Doesn't write to text file yet, will in the next update.
+- Automatic time detection - takes system time and adds to text file. Time zone should be selected in settings. Doesn't write to text file yet, will soon.
 
 ### Changed
 - Modified Field Note Generator GUI, more updates pending for better workflow
