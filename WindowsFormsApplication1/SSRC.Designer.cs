@@ -41,7 +41,6 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.richTextBoxDate = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.richTextBox5 = new System.Windows.Forms.RichTextBox();
@@ -82,6 +81,10 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.comboBoxYear = new System.Windows.Forms.ComboBox();
+            this.comboBoxMonth = new System.Windows.Forms.ComboBox();
+            this.comboBoxDay = new System.Windows.Forms.ComboBox();
+            this.checkBoxDate = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -114,27 +117,27 @@
             // homeToolStripMenuItem
             // 
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.homeToolStripMenuItem.Text = "Home";
             this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveArchiveToolStripMenuItem_Click);
             // 
             // saveArchiveAsToolStripMenuItem
             // 
             this.saveArchiveAsToolStripMenuItem.Name = "saveArchiveAsToolStripMenuItem";
-            this.saveArchiveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveArchiveAsToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.saveArchiveAsToolStripMenuItem.Text = "Save As...";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click_1);
             // 
@@ -163,7 +166,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 168);
+            this.label2.Location = new System.Drawing.Point(18, 167);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 13);
             this.label2.TabIndex = 5;
@@ -179,17 +182,6 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Name:";
             this.toolTip5.SetToolTip(this.label3, "The name of the submitter goes here.");
-            // 
-            // richTextBoxDate
-            // 
-            this.richTextBoxDate.Location = new System.Drawing.Point(61, 165);
-            this.richTextBoxDate.Name = "richTextBoxDate";
-            this.richTextBoxDate.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBoxDate.Size = new System.Drawing.Size(411, 20);
-            this.richTextBoxDate.TabIndex = 9;
-            this.richTextBoxDate.Text = "";
-            this.richTextBoxDate.WordWrap = false;
-            this.richTextBoxDate.TextChanged += new System.EventHandler(this.richTextBox3_TextChanged);
             // 
             // label4
             // 
@@ -270,7 +262,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(21, 617);
+            this.button5.Location = new System.Drawing.Point(12, 617);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(125, 32);
             this.button5.TabIndex = 33;
@@ -284,7 +276,7 @@
             this.label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label12.Location = new System.Drawing.Point(16, 556);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(418, 2);
+            this.label12.Size = new System.Drawing.Size(458, 2);
             this.label12.TabIndex = 34;
             this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
@@ -383,7 +375,7 @@
             // button3
             // 
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(412, 487);
+            this.button3.Location = new System.Drawing.Point(413, 483);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(60, 20);
             this.button3.TabIndex = 29;
@@ -529,7 +521,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label15.Location = new System.Drawing.Point(17, 347);
+            this.label15.Location = new System.Drawing.Point(12, 346);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(35, 13);
             this.label15.TabIndex = 66;
@@ -539,11 +531,109 @@
             // 
             this.label16.AutoSize = true;
             this.label16.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label16.Location = new System.Drawing.Point(17, 457);
+            this.label16.Location = new System.Drawing.Point(13, 459);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(51, 13);
             this.label16.TabIndex = 67;
             this.label16.Text = "Exporting";
+            // 
+            // comboBoxYear
+            // 
+            this.comboBoxYear.FormattingEnabled = true;
+            this.comboBoxYear.Items.AddRange(new object[] {
+            "2017",
+            "2018",
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025",
+            "2026",
+            "2027",
+            "2028",
+            "2029",
+            "2030"});
+            this.comboBoxYear.Location = new System.Drawing.Point(167, 164);
+            this.comboBoxYear.Name = "comboBoxYear";
+            this.comboBoxYear.Size = new System.Drawing.Size(62, 21);
+            this.comboBoxYear.TabIndex = 68;
+            this.comboBoxYear.Text = "YYYY";
+            // 
+            // comboBoxMonth
+            // 
+            this.comboBoxMonth.FormattingEnabled = true;
+            this.comboBoxMonth.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12"});
+            this.comboBoxMonth.Location = new System.Drawing.Point(61, 164);
+            this.comboBoxMonth.Name = "comboBoxMonth";
+            this.comboBoxMonth.Size = new System.Drawing.Size(47, 21);
+            this.comboBoxMonth.TabIndex = 69;
+            this.comboBoxMonth.Text = "MM";
+            // 
+            // comboBoxDay
+            // 
+            this.comboBoxDay.FormattingEnabled = true;
+            this.comboBoxDay.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.comboBoxDay.Location = new System.Drawing.Point(114, 164);
+            this.comboBoxDay.Name = "comboBoxDay";
+            this.comboBoxDay.Size = new System.Drawing.Size(47, 21);
+            this.comboBoxDay.TabIndex = 70;
+            this.comboBoxDay.Text = "DD";
+            // 
+            // checkBoxDate
+            // 
+            this.checkBoxDate.AutoSize = true;
+            this.checkBoxDate.Location = new System.Drawing.Point(246, 167);
+            this.checkBoxDate.Name = "checkBoxDate";
+            this.checkBoxDate.Size = new System.Drawing.Size(149, 17);
+            this.checkBoxDate.TabIndex = 72;
+            this.checkBoxDate.Text = "Detect Date Automatically";
+            this.checkBoxDate.UseVisualStyleBackColor = true;
+            this.checkBoxDate.CheckedChanged += new System.EventHandler(this.checkBoxDate_CheckedChanged);
             // 
             // SSRC
             // 
@@ -551,6 +641,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(484, 661);
+            this.Controls.Add(this.checkBoxDate);
+            this.Controls.Add(this.comboBoxDay);
+            this.Controls.Add(this.comboBoxMonth);
+            this.Controls.Add(this.comboBoxYear);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
@@ -582,10 +676,10 @@
             this.Controls.Add(this.richTextBox5);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.richTextBoxDate);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
@@ -606,7 +700,6 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RichTextBox richTextBoxDate;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RichTextBox richTextBox5;
@@ -653,6 +746,10 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.ComboBox comboBoxYear;
+        private System.Windows.Forms.ComboBox comboBoxMonth;
+        private System.Windows.Forms.ComboBox comboBoxDay;
+        private System.Windows.Forms.CheckBox checkBoxDate;
     }
 }
 
