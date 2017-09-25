@@ -51,6 +51,7 @@ namespace WindowsFormsApplication1
             this.Hide();
             SSRC aw = new SSRC();
             aw.Show();
+            //this.Close();
         }
 
         private void instructionTxt_Click(object sender, EventArgs e)

@@ -126,9 +126,22 @@ C:\Users\Tanner\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debu
 C:\Users\Tanner\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\Tanner\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SSRC.resources
 C:\Users\Tanner\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
-C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager-master\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
-C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
-C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
-C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager-master (March 2017)\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
-C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager-master (March 2017)\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
-C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager-master (March 2017)\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\H-Town Tech Nerds\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Loading.resources
+C:\Users\thetr\Desktop\Event-Manager\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\thetr\Desktop\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\thetr\Desktop\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\thetr\Desktop\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\thetr\Desktop\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.aboutWindow.resources
+C:\Users\thetr\Desktop\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Archive_Builder.resources
+C:\Users\thetr\Desktop\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.helpWindow.resources
+C:\Users\thetr\Desktop\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Loading.resources
+C:\Users\thetr\Desktop\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.welcomeWindow.resources
+C:\Users\thetr\Desktop\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.settingsWindow.resources
+C:\Users\thetr\Desktop\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\thetr\Desktop\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SSRC.resources
+C:\Users\thetr\Desktop\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\thetr\Desktop\Event-Manager\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\thetr\Desktop\Event-Manager\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+F:\Event-Manager\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+F:\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+F:\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb

@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class aboutWindow : Form
+    public partial class Loading : Form
     {
-        public aboutWindow()
+        public Loading()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Loading_Load(object sender, EventArgs e)
         {
-            this.Close();
-        }
 
-        private void aboutWindow_Load(object sender, EventArgs e)
-        {
-            
         }
     }
 }

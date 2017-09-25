@@ -38,7 +38,25 @@ namespace WindowsFormsApplication1
         {
             printDialog1.Document = Help;
             if (printDialog1.ShowDialog() == DialogResult.OK)
+            {
                 Help.Print();
+            }
+
         }
+ 
+        private void helpWindow_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            //e.Graphics.DrawString(richTextBoxHelp.text);
+        }
+        private void richTextBoxHelp_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
     }
 }

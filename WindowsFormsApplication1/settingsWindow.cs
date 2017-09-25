@@ -63,5 +63,12 @@ namespace WindowsFormsApplication1
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Loading ld = new Loading();
+            ld.Show();
+        }
     }
 }

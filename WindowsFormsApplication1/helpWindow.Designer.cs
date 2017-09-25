@@ -38,12 +38,16 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Help = new System.Drawing.Printing.PrintDocument();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             richTextBoxHelp = new System.Windows.Forms.RichTextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // richTextBoxHelp
             // 
+            richTextBoxHelp.AccessibleName = "richTextBoxHelp";
+            richTextBoxHelp.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+            richTextBoxHelp.BackColor = System.Drawing.SystemColors.ControlLightLight;
             richTextBoxHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             richTextBoxHelp.Location = new System.Drawing.Point(12, 27);
             richTextBoxHelp.Name = "richTextBoxHelp";
@@ -53,6 +57,7 @@
             richTextBoxHelp.Size = new System.Drawing.Size(418, 430);
             richTextBoxHelp.TabIndex = 1;
             richTextBoxHelp.Text = resources.GetString("richTextBoxHelp.Text");
+            richTextBoxHelp.TextChanged += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // menuStrip1
             // 
@@ -65,6 +70,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(442, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // fileToolStripMenuItem
             // 
@@ -111,16 +117,23 @@
             // 
             this.printDialog1.UseEXDialog = true;
             // 
+            // printDocument1
+            // 
+            this.printDocument1.DocumentName = "Help";
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.helpWindow_PrintPage);
+            // 
             // helpWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(442, 469);
             this.Controls.Add(richTextBoxHelp);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "helpWindow";
-            this.Text = "helpWindow";
+            this.Text = "Weather Event Manager Help";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -138,5 +151,6 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Drawing.Printing.PrintDocument Help;
         private System.Windows.Forms.PrintDialog printDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }

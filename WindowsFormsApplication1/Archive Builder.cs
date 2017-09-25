@@ -41,6 +41,10 @@ namespace WindowsFormsApplication1
             //fils in address box with last used FTP server.
 
             richTextBoxNetwk.Text = Properties.Settings.Default.FTPAddress;
+            richTextBoxStmRpt.Text = Properties.Settings.Default.FieldNoteAB;
+            richTextBoxNexrad.Text = Properties.Settings.Default.NEXRADAB;
+            richTextBox7Media.Text = Properties.Settings.Default.MediaAB;
+            richTextBoxExpt.Text = Properties.Settings.Default.ExportAB;
         }
 
         private void richTextBox8_TextChanged(object sender, EventArgs e)
@@ -198,6 +202,10 @@ namespace WindowsFormsApplication1
         {
             //Save ftp address entered into text box
             Properties.Settings.Default.FTPAddress = richTextBoxNetwk.Text;
+            Properties.Settings.Default.FieldNoteAB = richTextBoxStmRpt.Text;
+            Properties.Settings.Default.NEXRADAB = richTextBoxNexrad.Text;
+            Properties.Settings.Default.MediaAB = richTextBox7Media.Text;
+            Properties.Settings.Default.ExportAB = richTextBoxExpt.Text;
             Properties.Settings.Default.Save();
 
             // Get the files in the Media Files directory and copy them to the new location.
@@ -225,7 +233,7 @@ namespace WindowsFormsApplication1
             foreach (FileInfo afile in filez)
             {
                 string tempath = Path.Combine(@"C:\tmp\NEXRAD Data", afile.Name);
-                afile.CopyTo(tempath, false);  
+                afile.CopyTo(tempath, false);
             }
 
             // Get the files in the Storm Reports directory and copy them to the new location.
@@ -246,16 +254,33 @@ namespace WindowsFormsApplication1
             string zipDir = @"c:/tmp";
             string zipPath = @richTextBoxExpt.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + Properties.Settings.Default.ArchiveName.ToString() + ".zip";
             //Perform zip.
-            ZipFile.CreateFromDirectory(zipDir, zipPath, CompressionLevel.Fastest, true);
+            ZipFile.CreateFromDirectory(zipDir, zipPath, CompressionLevel.Fastest, false);
 
-            using (WebClient client = new WebClient())
+
+
+            try
             {
-                client.Credentials = new NetworkCredential(@Properties.Settings.Default.Username.ToString(), @Properties.Settings.Default.Password.ToString());
-                client.UploadFile(@richTextBoxNetwk.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + "_" + Properties.Settings.Default.ArchiveName.ToString() + ".zip", "STOR", @richTextBoxExpt.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + Properties.Settings.Default.ArchiveName.ToString() + ".zip");
+
+
+                using (WebClient client = new WebClient())
+                {
+                    client.Credentials = new NetworkCredential(@Properties.Settings.Default.Username.ToString(), @Properties.Settings.Default.Password.ToString());
+                    client.UploadFile(@richTextBoxNetwk.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + "_" + Properties.Settings.Default.ArchiveName.ToString() + ".zip", "STOR", @richTextBoxExpt.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + Properties.Settings.Default.ArchiveName.ToString() + ".zip");
+                }
+
+
+                {
+                    MessageBox.Show("Operation completed successfully!");
+                }
             }
 
-                MessageBox.Show("Operation completed successfully!");
+            catch
+            {
+                MessageBox.Show("Error: the network location was unavailable.");
+            }
         }
+        
+
 
         private void richTextBox7Media_TextChanged(object sender, EventArgs e)
         {
@@ -330,7 +355,7 @@ namespace WindowsFormsApplication1
         {
             welcomeWindow ww = new welcomeWindow();
             ww.Show();
-            this.Hide();
+            this.Close();
         }
     }
 }
