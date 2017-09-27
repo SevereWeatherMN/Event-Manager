@@ -23,6 +23,7 @@ namespace WindowsFormsApplication1
             textBoxArchName.Text = Properties.Settings.Default.ArchiveName;
             textBoxUsername.Text = Properties.Settings.Default.Username;
             textBoxPsswd.Text = Properties.Settings.Default.Password;
+            textBoxTZSelected.Text = Properties.Settings.Default.TimeZone;
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
@@ -74,10 +75,10 @@ namespace WindowsFormsApplication1
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             Properties.Settings.Default.TimeZone = comboBoxTimeZone.Text;
-            Properties.Settings.Default.Save();
             string title = Properties.Settings.Default.TimeZone.ToString();
             var first3Chars = title.Length <= 3 ? title : title.Substring(0, 3);
             textBoxTZSelected.Text = first3Chars;
+            Properties.Settings.Default.TimeZone = textBoxTZSelected.Text;
         }
 
         private void label12_Click(object sender, EventArgs e)

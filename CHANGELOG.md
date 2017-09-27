@@ -5,7 +5,17 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## 0.4.2 - 2017-9-27
-### 0.4.2 is in progress for release. changelog will be updated accordingly.
+### Added
+- Date section on Field Note Generator is a series of dropdown menus
+- Time Zone selected in settings now shows up in exported text file
+
+### Changed
+- Network directory error is more specific
+
+### Known Problems
+- Location service extrmely unreliable, works 1/3 times, will need work
+- The program may overwrite server files
+- Date Does not show up in text file, will be worked out soon
 
 ## 0.4.1 - 2017-9-24
 ### Changed

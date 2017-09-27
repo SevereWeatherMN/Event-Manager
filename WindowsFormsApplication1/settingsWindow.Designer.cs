@@ -277,10 +277,11 @@
             // 
             this.textBoxTZSelected.BackColor = System.Drawing.SystemColors.Control;
             this.textBoxTZSelected.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxTZSelected.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBoxTZSelected.Location = new System.Drawing.Point(125, 195);
+            this.textBoxTZSelected.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.textBoxTZSelected.Location = new System.Drawing.Point(127, 195);
             this.textBoxTZSelected.Name = "textBoxTZSelected";
-            this.textBoxTZSelected.Size = new System.Drawing.Size(286, 13);
+            this.textBoxTZSelected.ReadOnly = true;
+            this.textBoxTZSelected.Size = new System.Drawing.Size(284, 13);
             this.textBoxTZSelected.TabIndex = 81;
             // 
             // settingsWindow

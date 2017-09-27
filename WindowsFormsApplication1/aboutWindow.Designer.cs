@@ -42,7 +42,7 @@
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(399, 80);
             this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "Codename Stratus\nBuild: v0.2.1\nDate: 2016-12-27\nCreated By: SevereWeatherMN Devel" +
+            this.richTextBox1.Text = "Codename Stratus\nBuild: v0.4.2\nDate: 2016-12-27\nCreated By: SevereWeatherMN Devel" +
     "opment Team";
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 

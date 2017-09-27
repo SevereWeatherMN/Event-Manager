@@ -202,5 +202,17 @@ namespace WindowsFormsApplication1.Properties {
                 this["TimeZone"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LongTimeZone {
+            get {
+                return ((string)(this["LongTimeZone"]));
+            }
+            set {
+                this["LongTimeZone"] = value;
+            }
+        }
     }
 }
