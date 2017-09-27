@@ -190,5 +190,17 @@ namespace WindowsFormsApplication1.Properties {
                 this["Time"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string TimeZone {
+            get {
+                return ((string)(this["TimeZone"]));
+            }
+            set {
+                this["TimeZone"] = value;
+            }
+        }
     }
 }

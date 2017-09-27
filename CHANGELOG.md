@@ -4,12 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## 0.4.1 - 2017-9-24
-### Added
+## 0.4.2 - 2017-9-27
+### 0.4.2 is in progress for release. changelog will be updated accordingly.
 
+## 0.4.1 - 2017-9-24
 ### Changed
 - Formatted Time Zone List, does not yet update text file, will soon
-
 
 ## 0.4.0 - 2017-9-24
 ### Added

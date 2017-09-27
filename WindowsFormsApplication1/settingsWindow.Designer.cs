@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(settingsWindow));
             this.instructionTxt = new System.Windows.Forms.Label();
-            this.textBoxUsermane = new System.Windows.Forms.TextBox();
+            this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,8 +48,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxTimeZone = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBoxTZSelected = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // instructionTxt
@@ -65,13 +67,13 @@
             this.instructionTxt.Text = "These settings should be set up properly and not need modification. Your credenti" +
     "als will be saved each time the program runs.";
             // 
-            // textBoxUsermane
+            // textBoxUsername
             // 
-            this.textBoxUsermane.Location = new System.Drawing.Point(73, 73);
-            this.textBoxUsermane.Name = "textBoxUsermane";
-            this.textBoxUsermane.Size = new System.Drawing.Size(338, 20);
-            this.textBoxUsermane.TabIndex = 62;
-            this.textBoxUsermane.TextChanged += new System.EventHandler(this.textBoxUsermane_TextChanged);
+            this.textBoxUsername.Location = new System.Drawing.Point(73, 73);
+            this.textBoxUsername.Name = "textBoxUsername";
+            this.textBoxUsername.Size = new System.Drawing.Size(338, 20);
+            this.textBoxUsername.TabIndex = 62;
+            this.textBoxUsername.TextChanged += new System.EventHandler(this.textBoxUsermane_TextChanged);
             // 
             // label1
             // 
@@ -121,7 +123,7 @@
             // buttonCancel
             // 
             this.buttonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonCancel.Location = new System.Drawing.Point(337, 310);
+            this.buttonCancel.Location = new System.Drawing.Point(337, 322);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 68;
@@ -132,7 +134,7 @@
             // buttonSave
             // 
             this.buttonSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSave.Location = new System.Drawing.Point(256, 310);
+            this.buttonSave.Location = new System.Drawing.Point(256, 322);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(75, 23);
             this.buttonSave.TabIndex = 69;
@@ -145,7 +147,7 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(12, 217);
+            this.label5.Location = new System.Drawing.Point(12, 229);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(95, 13);
             this.label5.TabIndex = 70;
@@ -156,7 +158,7 @@
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label6.Location = new System.Drawing.Point(11, 235);
+            this.label6.Location = new System.Drawing.Point(11, 247);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(400, 2);
             this.label6.TabIndex = 71;
@@ -164,7 +166,7 @@
             // textBoxArchName
             // 
             this.textBoxArchName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxArchName.Location = new System.Drawing.Point(164, 244);
+            this.textBoxArchName.Location = new System.Drawing.Point(164, 256);
             this.textBoxArchName.Name = "textBoxArchName";
             this.textBoxArchName.Size = new System.Drawing.Size(247, 20);
             this.textBoxArchName.TabIndex = 72;
@@ -174,7 +176,7 @@
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 247);
+            this.label7.Location = new System.Drawing.Point(12, 259);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(149, 13);
             this.label7.TabIndex = 73;
@@ -188,7 +190,7 @@
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(12, 273);
+            this.label8.Location = new System.Drawing.Point(12, 285);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(344, 13);
             this.label8.TabIndex = 74;
@@ -205,7 +207,7 @@
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(175, 310);
+            this.button1.Location = new System.Drawing.Point(175, 322);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 75;
@@ -217,43 +219,26 @@
             // 
             this.label9.AutoSize = true;
             this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label9.Location = new System.Drawing.Point(13, 148);
+            this.label9.Location = new System.Drawing.Point(13, 138);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(145, 13);
+            this.label9.Size = new System.Drawing.Size(58, 13);
             this.label9.TabIndex = 76;
-            this.label9.Text = "FTP Server Login Information";
+            this.label9.Text = "Time Zone";
             // 
             // label10
             // 
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label10.Location = new System.Drawing.Point(11, 165);
+            this.label10.Location = new System.Drawing.Point(11, 155);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(400, 2);
             this.label10.TabIndex = 77;
             // 
-            // comboBox1
+            // comboBoxTimeZone
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxTimeZone.FormattingEnabled = true;
+            this.comboBoxTimeZone.Items.AddRange(new object[] {
             "GMT - Greenwich Mean Time    GMT",
             "UTC - Universal Coordinated Time    GMT",
-            "ECT - European Central Time    +1:00",
-            "EET - Eastern European Time    +2:00",
-            "ART - (Arabic) Egypt Standard Time    +2:00",
-            "EAT - Eastern African Time    +3:00",
-            "MET - Middle East Time    +3:30",
-            "NET - Near East Time    +4:00",
-            "PLT - Pakistan Lahore Time    +5:00",
-            "IST - India Standard Time    +5:30",
-            "BST - Bangladesh Standard Time    +6:00",
-            "VST - Vietnam Standard Time\t+7:00",
-            "CTT - China Taiwan Time    +8:00",
-            "JST - Japan Standard Time    +9:00",
-            "ACT - Australia Central Time    +9:30",
-            "AET - Australia Eastern Time    +10:00",
-            "SST - Solomon Standard Time    +11:00",
-            "NST - New Zealand Standard Time    +12:00",
-            "MIT - Midway Islands Time    -11:00",
             "HST - Hawaii Standard Time    -10:00",
             "AST - Alaska Standard Time    -9:00",
             "PST - Pacific Standard Time    -8:00",
@@ -262,32 +247,51 @@
             "CST - Central Standard Time    -6:00",
             "EST - Eastern Standard Time    -5:00",
             "IET - Indiana Eastern Standard Time    -5:00",
-            "PRT - Puerto Rico and US Virgin Islands Time    -4:00",
-            "CNT - Canada Newfoundland Time    -3:30",
-            "AGT - Argentina Standard Time\t    -3:00",
-            "BET - Brazil Eastern Time    -3:00",
-            "CAT - Central African Time    -1:00"});
-            this.comboBox1.Location = new System.Drawing.Point(113, 173);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(298, 21);
-            this.comboBox1.TabIndex = 78;
+            "PRT - Puerto Rico and US Virgin Islands Time    -4:00"});
+            this.comboBoxTimeZone.Location = new System.Drawing.Point(125, 163);
+            this.comboBoxTimeZone.Name = "comboBoxTimeZone";
+            this.comboBoxTimeZone.Size = new System.Drawing.Size(286, 21);
+            this.comboBoxTimeZone.TabIndex = 78;
+            this.comboBoxTimeZone.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(13, 176);
+            this.label11.Location = new System.Drawing.Point(13, 166);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(94, 13);
             this.label11.TabIndex = 79;
             this.label11.Text = "Select Time Zone:";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(13, 195);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(106, 13);
+            this.label12.TabIndex = 80;
+            this.label12.Text = "Selected Time Zone:";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
+            // 
+            // textBoxTZSelected
+            // 
+            this.textBoxTZSelected.BackColor = System.Drawing.SystemColors.Control;
+            this.textBoxTZSelected.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxTZSelected.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textBoxTZSelected.Location = new System.Drawing.Point(125, 195);
+            this.textBoxTZSelected.Name = "textBoxTZSelected";
+            this.textBoxTZSelected.Size = new System.Drawing.Size(286, 13);
+            this.textBoxTZSelected.TabIndex = 81;
+            // 
             // settingsWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(424, 339);
+            this.ClientSize = new System.Drawing.Size(424, 351);
+            this.Controls.Add(this.textBoxTZSelected);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBoxTimeZone);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button1);
@@ -303,7 +307,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBoxUsermane);
+            this.Controls.Add(this.textBoxUsername);
             this.Controls.Add(this.instructionTxt);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "settingsWindow";
@@ -317,7 +321,7 @@
         #endregion
 
         private System.Windows.Forms.Label instructionTxt;
-        private System.Windows.Forms.TextBox textBoxUsermane;
+        private System.Windows.Forms.TextBox textBoxUsername;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -334,7 +338,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxTimeZone;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBoxTZSelected;
     }
 }

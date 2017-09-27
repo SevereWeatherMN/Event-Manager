@@ -57,9 +57,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(341, 137);
+            this.ClientSize = new System.Drawing.Size(341, 97);
             this.Controls.Add(this.labelCompleting);
             this.Controls.Add(this.progressBar1);
+            this.Enabled = false;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Loading";
