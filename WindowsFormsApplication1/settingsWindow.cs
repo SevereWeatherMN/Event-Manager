@@ -20,7 +20,7 @@ namespace WindowsFormsApplication1
 
         private void settingsWindow_Load(object sender, EventArgs e)
         {
-            textBoxArchName.Text = Properties.Settings.Default.ArchiveName;
+            textBoxFileName.Text = Properties.Settings.Default.FileName;
             textBoxUsername.Text = Properties.Settings.Default.Username;
             textBoxPsswd.Text = Properties.Settings.Default.Password;
             textBoxTZSelected.Text = Properties.Settings.Default.TimeZone;
@@ -38,7 +38,7 @@ namespace WindowsFormsApplication1
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            Properties.Settings.Default.ArchiveName = textBoxArchName.Text;
+            Properties.Settings.Default.FileName = textBoxFileName.Text;
             Properties.Settings.Default.Username = textBoxUsername.Text;
             Properties.Settings.Default.Password = textBoxPsswd.Text;
             Properties.Settings.Default.Save();

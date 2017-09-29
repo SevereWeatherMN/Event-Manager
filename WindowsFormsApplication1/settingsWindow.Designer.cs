@@ -41,7 +41,7 @@
             this.buttonSave = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBoxArchName = new System.Windows.Forms.TextBox();
+            this.textBoxFileName = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
@@ -163,14 +163,14 @@
             this.label6.Size = new System.Drawing.Size(400, 2);
             this.label6.TabIndex = 71;
             // 
-            // textBoxArchName
+            // textBoxFileName
             // 
-            this.textBoxArchName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxArchName.Location = new System.Drawing.Point(164, 256);
-            this.textBoxArchName.Name = "textBoxArchName";
-            this.textBoxArchName.Size = new System.Drawing.Size(247, 20);
-            this.textBoxArchName.TabIndex = 72;
-            this.textBoxArchName.TextChanged += new System.EventHandler(this.textBoxArchName_TextChanged);
+            this.textBoxFileName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxFileName.Location = new System.Drawing.Point(109, 256);
+            this.textBoxFileName.Name = "textBoxFileName";
+            this.textBoxFileName.Size = new System.Drawing.Size(302, 20);
+            this.textBoxFileName.TabIndex = 72;
+            this.textBoxFileName.TextChanged += new System.EventHandler(this.textBoxArchName_TextChanged);
             // 
             // label7
             // 
@@ -178,9 +178,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(12, 259);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(149, 13);
+            this.label7.Size = new System.Drawing.Size(91, 13);
             this.label7.TabIndex = 73;
-            this.label7.Text = "Default Archive Name Format:";
+            this.label7.Text = "Organization Tag:";
             this.toolTip1.SetToolTip(this.label7, "This feature will name all event archives similarily, keeping things organized. Y" +
         "ou could use the name of your storm chasing organization (for example, [Date-Tim" +
         "e]-NWS-SKYWARN-ARCHIVES)");
@@ -201,8 +201,7 @@
             this.toolTip1.AutoPopDelay = 20000;
             this.toolTip1.InitialDelay = 500;
             this.toolTip1.ReshowDelay = 100;
-            this.toolTip1.ToolTipTitle = "Lets each archive have a similar name. Example Name Format: Weather-Event-Archive" +
-    "";
+            this.toolTip1.ToolTipTitle = "Adds your organization name to the file";
             // 
             // button1
             // 
@@ -298,7 +297,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBoxArchName);
+            this.Controls.Add(this.textBoxFileName);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.buttonSave);
@@ -332,7 +331,7 @@
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        public System.Windows.Forms.TextBox textBoxArchName;
+        public System.Windows.Forms.TextBox textBoxFileName;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ToolTip toolTip1;

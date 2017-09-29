@@ -26,12 +26,12 @@ namespace WindowsFormsApplication1.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string ArchiveName {
+        public string FileName {
             get {
-                return ((string)(this["ArchiveName"]));
+                return ((string)(this["FileName"]));
             }
             set {
-                this["ArchiveName"] = value;
+                this["FileName"] = value;
             }
         }
         
@@ -134,18 +134,6 @@ namespace WindowsFormsApplication1.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string DateFN {
-            get {
-                return ((string)(this["DateFN"]));
-            }
-            set {
-                this["DateFN"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string LocalExportFN {
             get {
                 return ((string)(this["LocalExportFN"]));
@@ -212,6 +200,42 @@ namespace WindowsFormsApplication1.Properties {
             }
             set {
                 this["LongTimeZone"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Month {
+            get {
+                return ((string)(this["Month"]));
+            }
+            set {
+                this["Month"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Day {
+            get {
+                return ((string)(this["Day"]));
+            }
+            set {
+                this["Day"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Year {
+            get {
+                return ((string)(this["Year"]));
+            }
+            set {
+                this["Year"] = value;
             }
         }
     }

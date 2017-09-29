@@ -252,7 +252,7 @@ namespace WindowsFormsApplication1
 
             // Declare path to zip and path to zip to.
             string zipDir = @"c:/tmp";
-            string zipPath = @richTextBoxExpt.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + Properties.Settings.Default.ArchiveName.ToString() + ".zip";
+            string zipPath = @richTextBoxExpt.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + Properties.Settings.Default.FileName.ToString() + ".zip";
             //Perform zip.
             ZipFile.CreateFromDirectory(zipDir, zipPath, CompressionLevel.Fastest, false);
 
@@ -265,7 +265,7 @@ namespace WindowsFormsApplication1
                 using (WebClient client = new WebClient())
                 {
                     client.Credentials = new NetworkCredential(@Properties.Settings.Default.Username.ToString(), @Properties.Settings.Default.Password.ToString());
-                    client.UploadFile(@richTextBoxNetwk.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + "_" + Properties.Settings.Default.ArchiveName.ToString() + ".zip", "STOR", @richTextBoxExpt.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + Properties.Settings.Default.ArchiveName.ToString() + ".zip");
+                    client.UploadFile(@richTextBoxNetwk.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + "_" + Properties.Settings.Default.FileName.ToString() + ".zip", "STOR", @richTextBoxExpt.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + Properties.Settings.Default.FileName.ToString() + ".zip");
                 }
 
 

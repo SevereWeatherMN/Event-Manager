@@ -2,7 +2,7 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WindowsFormsApplication1.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="ArchiveName" Type="System.String" Scope="User">
+    <Setting Name="FileName" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="Username" Type="System.String" Scope="User">
@@ -29,9 +29,6 @@
     <Setting Name="NameFN" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="DateFN" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
     <Setting Name="LocalExportFN" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
@@ -48,6 +45,15 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="LongTimeZone" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Month" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Day" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Year" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
   </Settings>
