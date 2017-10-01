@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 
 ## Unreleased
 - Ability to sign in with a username and password in order to retrieve personal settings
+- GUI and functionality update for Archive Builder
 
 ## 0.5.0 - 2017-10-1
 ### Added
