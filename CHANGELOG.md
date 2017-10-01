@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 
-## [Unreleased]
+## Unreleased
 - Ability to sign in with a username and password in order to retrieve personal settings
 
 ## 0.5.0 - 2017-10-1
