@@ -45,7 +45,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.comboBoxTimeZone = new System.Windows.Forms.ComboBox();
@@ -64,8 +63,9 @@
             this.instructionTxt.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.instructionTxt.Size = new System.Drawing.Size(400, 43);
             this.instructionTxt.TabIndex = 61;
-            this.instructionTxt.Text = "These settings should be set up properly and not need modification. Your credenti" +
-    "als will be saved each time the program runs.";
+            this.instructionTxt.Text = "These settings may need modification on the program\'s first run. Your credentials" +
+    " will be saved each time the program runs.";
+            this.instructionTxt.Click += new System.EventHandler(this.instructionTxt_Click);
             // 
             // textBoxUsername
             // 
@@ -123,6 +123,7 @@
             // buttonCancel
             // 
             this.buttonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonCancel.Location = new System.Drawing.Point(337, 322);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
@@ -203,17 +204,6 @@
             this.toolTip1.ReshowDelay = 100;
             this.toolTip1.ToolTipTitle = "Adds your organization name to the file";
             // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(175, 322);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 75;
-            this.button1.Text = "Temp";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -285,8 +275,10 @@
             // 
             // settingsWindow
             // 
+            this.AcceptButton = this.buttonSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.buttonCancel;
             this.ClientSize = new System.Drawing.Size(424, 351);
             this.Controls.Add(this.textBoxTZSelected);
             this.Controls.Add(this.label12);
@@ -294,7 +286,6 @@
             this.Controls.Add(this.comboBoxTimeZone);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBoxFileName);
@@ -309,7 +300,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxUsername);
             this.Controls.Add(this.instructionTxt);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "settingsWindow";
             this.Text = "Settings";
             this.Load += new System.EventHandler(this.settingsWindow_Load);
@@ -335,7 +328,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox comboBoxTimeZone;

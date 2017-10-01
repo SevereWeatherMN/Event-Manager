@@ -282,6 +282,7 @@
             // 
             // buttonReturnFN
             // 
+            this.buttonReturnFN.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonReturnFN.Location = new System.Drawing.Point(179, 617);
             this.buttonReturnFN.Name = "buttonReturnFN";
             this.buttonReturnFN.Size = new System.Drawing.Size(125, 32);
@@ -637,9 +638,11 @@
             // 
             // SSRC
             // 
+            this.AcceptButton = this.button5;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CancelButton = this.buttonReturnFN;
             this.ClientSize = new System.Drawing.Size(484, 661);
             this.Controls.Add(this.checkBoxDate);
             this.Controls.Add(this.comboBoxDay);

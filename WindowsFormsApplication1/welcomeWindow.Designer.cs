@@ -38,6 +38,7 @@
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +47,7 @@
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button1.AutoSize = true;
             this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button1.Location = new System.Drawing.Point(12, 87);
+            this.button1.Location = new System.Drawing.Point(12, 126);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(200, 48);
             this.button1.TabIndex = 1;
@@ -57,7 +58,7 @@
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(230, 87);
+            this.button2.Location = new System.Drawing.Point(247, 126);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(200, 48);
             this.button2.TabIndex = 2;
@@ -69,18 +70,21 @@
             // 
             this.welcomeTxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.welcomeTxt.BackColor = System.Drawing.Color.Transparent;
             this.welcomeTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.welcomeTxt.Location = new System.Drawing.Point(12, 33);
+            this.welcomeTxt.Location = new System.Drawing.Point(12, 72);
             this.welcomeTxt.Name = "welcomeTxt";
             this.welcomeTxt.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.welcomeTxt.Size = new System.Drawing.Size(418, 32);
+            this.welcomeTxt.Size = new System.Drawing.Size(435, 32);
             this.welcomeTxt.TabIndex = 3;
             this.welcomeTxt.Text = "You can use this program to create storm reports, or package data into an archive" +
     " for historical documentation. What would you like to do?\r\n";
+            this.welcomeTxt.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.welcomeTxt.Click += new System.EventHandler(this.instructionTxt_Click);
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
             this.settingsToolStripMenuItem,
@@ -88,7 +92,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(442, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(459, 24);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -128,19 +132,36 @@
             this.helpToolStripMenuItem.Text = "Help";
             this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(10, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(443, 25);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Welcome to the Weather Event Manager!";
+            // 
             // welcomeWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(442, 147);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(459, 186);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.welcomeTxt);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "welcomeWindow";
             this.Text = "Weather Event Manager";
             this.Load += new System.EventHandler(this.welcomeWindow_Load);
@@ -162,6 +183,7 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
 
     }
 }

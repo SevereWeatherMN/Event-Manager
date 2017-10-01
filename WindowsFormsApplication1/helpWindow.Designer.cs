@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.RichTextBox richTextBoxHelp;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(helpWindow));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,28 +38,14 @@
             this.Help = new System.Drawing.Printing.PrintDocument();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            richTextBoxHelp = new System.Windows.Forms.RichTextBox();
+            this.richTextBoxHelp = new System.Windows.Forms.RichTextBox();
+            this.buttonOK = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // richTextBoxHelp
-            // 
-            richTextBoxHelp.AccessibleName = "richTextBoxHelp";
-            richTextBoxHelp.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-            richTextBoxHelp.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            richTextBoxHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            richTextBoxHelp.Location = new System.Drawing.Point(12, 27);
-            richTextBoxHelp.Name = "richTextBoxHelp";
-            richTextBoxHelp.ReadOnly = true;
-            richTextBoxHelp.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            richTextBoxHelp.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            richTextBoxHelp.Size = new System.Drawing.Size(418, 430);
-            richTextBoxHelp.TabIndex = 1;
-            richTextBoxHelp.Text = resources.GetString("richTextBoxHelp.Text");
-            richTextBoxHelp.TextChanged += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.printToolStripMenuItem,
@@ -84,14 +69,14 @@
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save As...";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -122,14 +107,41 @@
             this.printDocument1.DocumentName = "Help";
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.helpWindow_PrintPage);
             // 
+            // richTextBoxHelp
+            // 
+            this.richTextBoxHelp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBoxHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.richTextBoxHelp.Location = new System.Drawing.Point(13, 28);
+            this.richTextBoxHelp.Name = "richTextBoxHelp";
+            this.richTextBoxHelp.ReadOnly = true;
+            this.richTextBoxHelp.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.richTextBoxHelp.Size = new System.Drawing.Size(417, 359);
+            this.richTextBoxHelp.TabIndex = 1;
+            this.richTextBoxHelp.Text = resources.GetString("richTextBoxHelp.Text");
+            // 
+            // buttonOK
+            // 
+            this.buttonOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonOK.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.buttonOK.Location = new System.Drawing.Point(355, 401);
+            this.buttonOK.Name = "buttonOK";
+            this.buttonOK.Size = new System.Drawing.Size(75, 23);
+            this.buttonOK.TabIndex = 2;
+            this.buttonOK.Text = "OK";
+            this.buttonOK.UseVisualStyleBackColor = true;
+            // 
             // helpWindow
             // 
+            this.AcceptButton = this.buttonOK;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(442, 469);
-            this.Controls.Add(richTextBoxHelp);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.CancelButton = this.buttonOK;
+            this.ClientSize = new System.Drawing.Size(442, 436);
+            this.Controls.Add(this.buttonOK);
+            this.Controls.Add(this.richTextBoxHelp);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "helpWindow";
@@ -152,5 +164,7 @@
         private System.Drawing.Printing.PrintDocument Help;
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.RichTextBox richTextBoxHelp;
+        private System.Windows.Forms.Button buttonOK;
     }
 }

@@ -160,3 +160,4 @@ C:\Users\tycam_000\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\D
 C:\Users\tycam_000\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\tycam_000\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SSRC.resources
 C:\Users\tycam_000\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\tycam\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Loading.resources

@@ -4,6 +4,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+
+## [Unreleased]
+- Ability to sign in with a username and password in order to retrieve personal settings
+
+## 0.5.0 - 2017-10-1
+### Added
+- Background to welcome screen
+- All windows now have shortcuts, ESC and Enter have functions on most windows
+
+### Changed
+- Welcome window now has background and title
+- Help window text box was previously corrupted, works properly
+
+### Fixed
+- Print feature in Help window is functional
+- program now contacts FTP server correctly, when entering title there must not be a "/" at the end as the program will add one.
+- All windows are now locked and cannot be resized
+- About window is now read only and cannot be edited
+
 ## 0.4.2 - 2017-9-27
 ### Added
 - Date section on Field Note Generator is a series of dropdown menus
@@ -140,5 +159,3 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Settings window now has a functionless GUI
 - Data Archive Creator's browse buttons function properly
 
-[Unreleased]: Unreleased
-[0.0.1]: No location for application yet

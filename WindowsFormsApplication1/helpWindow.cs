@@ -36,17 +36,29 @@ namespace WindowsFormsApplication1
 
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            printDialog1.Document = Help;
+            printDialog1.Document = printDocument1;
             if (printDialog1.ShowDialog() == DialogResult.OK)
             {
-                Help.Print();
+                printDocument1.Print();
             }
 
         }
- 
+
         private void helpWindow_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            //e.Graphics.DrawString(richTextBoxHelp.text);
+            using (Font font1 = new Font("Arial", 12, GraphicsUnit.Point))
+            {
+                Rectangle rect1 = new Rectangle(30, 10, 800, 1100);
+
+                // Create a StringFormat object with the each line of text, and the block of text centered on the page.
+                StringFormat stringFormat = new StringFormat();
+                stringFormat.Alignment = StringAlignment.Center;
+                stringFormat.LineAlignment = StringAlignment.Center;
+
+                // Draw the text and the surrounding rectangle.
+                e.Graphics.DrawString(richTextBoxHelp.Text, font1, Brushes.Black, rect1, stringFormat);
+                e.Graphics.DrawRectangle(Pens.White, rect1);
+            }
         }
         private void richTextBoxHelp_TextChanged(object sender, EventArgs e)
         {

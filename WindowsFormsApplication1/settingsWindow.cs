@@ -65,13 +65,6 @@ namespace WindowsFormsApplication1
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Loading ld = new Loading();
-            ld.Show();
-        }
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             Properties.Settings.Default.TimeZone = comboBoxTimeZone.Text;
@@ -82,6 +75,11 @@ namespace WindowsFormsApplication1
         }
 
         private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void instructionTxt_Click(object sender, EventArgs e)
         {
 
         }
