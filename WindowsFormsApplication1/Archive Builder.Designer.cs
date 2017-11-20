@@ -46,7 +46,7 @@
             this.checkBoxMedia = new System.Windows.Forms.CheckBox();
             this.mediaDir = new System.Windows.Forms.Label();
             this.browseBtnMedia = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.buttonFinishAB = new System.Windows.Forms.Button();
             this.instructionTxt = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.richTextBoxStmRpt = new System.Windows.Forms.RichTextBox();
@@ -247,6 +247,7 @@
             // browseBtnMedia
             // 
             this.browseBtnMedia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.browseBtnMedia.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.browseBtnMedia.Enabled = false;
             this.browseBtnMedia.Location = new System.Drawing.Point(446, 90);
             this.browseBtnMedia.Name = "browseBtnMedia";
@@ -255,16 +256,16 @@
             this.browseBtnMedia.Text = "Browse...";
             this.browseBtnMedia.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // buttonFinishAB
             // 
-            this.button5.Location = new System.Drawing.Point(10, 402);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(127, 32);
-            this.button5.TabIndex = 58;
-            this.button5.Text = "Finish";
-            this.toolTip1.SetToolTip(this.button5, "Compile the archive and perform the requested operations.");
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.buttonFinishAB.Location = new System.Drawing.Point(10, 402);
+            this.buttonFinishAB.Name = "buttonFinishAB";
+            this.buttonFinishAB.Size = new System.Drawing.Size(127, 32);
+            this.buttonFinishAB.TabIndex = 58;
+            this.buttonFinishAB.Text = "Finish";
+            this.toolTip1.SetToolTip(this.buttonFinishAB, "Compile the archive and perform the requested operations.");
+            this.buttonFinishAB.UseVisualStyleBackColor = true;
+            this.buttonFinishAB.Click += new System.EventHandler(this.button5_Click);
             // 
             // instructionTxt
             // 
@@ -435,6 +436,7 @@
             // 
             // buttonExitAB
             // 
+            this.buttonExitAB.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonExitAB.Location = new System.Drawing.Point(305, 402);
             this.buttonExitAB.Name = "buttonExitAB";
             this.buttonExitAB.Size = new System.Drawing.Size(127, 32);
@@ -446,6 +448,7 @@
             // 
             // buttonReturnAB
             // 
+            this.buttonReturnAB.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonReturnAB.Location = new System.Drawing.Point(157, 402);
             this.buttonReturnAB.Name = "buttonReturnAB";
             this.buttonReturnAB.Size = new System.Drawing.Size(127, 32);
@@ -457,8 +460,10 @@
             // 
             // Archive_Builder
             // 
+            this.AcceptButton = this.buttonFinishAB;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.buttonReturnAB;
             this.ClientSize = new System.Drawing.Size(442, 449);
             this.Controls.Add(this.buttonReturnAB);
             this.Controls.Add(this.buttonExitAB);
@@ -472,7 +477,7 @@
             this.Controls.Add(this.stormReportDir);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.instructionTxt);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.buttonFinishAB);
             this.Controls.Add(this.richTextBox7Media);
             this.Controls.Add(this.richTextBoxExpt);
             this.Controls.Add(this.checkBoxNexrad);
@@ -490,8 +495,11 @@
             this.Controls.Add(this.mediaDir);
             this.Controls.Add(this.browseBtnMedia);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "Archive_Builder";
             this.Text = "Weather Event Archive Builder";
             this.Load += new System.EventHandler(this.Archive_Builder_Load);
@@ -521,7 +529,7 @@
         private System.Windows.Forms.CheckBox checkBoxMedia;
         private System.Windows.Forms.Label mediaDir;
         private System.Windows.Forms.Button browseBtnMedia;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button buttonFinishAB;
         private System.Windows.Forms.Label instructionTxt;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.RichTextBox richTextBoxStmRpt;

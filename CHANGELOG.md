@@ -11,10 +11,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 ### Added
 - Background to welcome screen
 - All windows now have shortcuts, ESC and Enter have functions on most windows
+- About window now incldues a link to SevereWeatherMN's website (not working at the moment)
 
 ### Changed
 - Welcome window now has background and title
 - Help window text box was previously corrupted, works properly
+- SSRC.cs is now named FieldNoteGenerator.cs
 
 ### Fixed
 - Print feature in Help window is functional

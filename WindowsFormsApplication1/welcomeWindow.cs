@@ -49,7 +49,7 @@ namespace WindowsFormsApplication1
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            SSRC aw = new SSRC();
+            FieldNoteGenerator aw = new FieldNoteGenerator();
             aw.Show();
             //this.Close();
         }

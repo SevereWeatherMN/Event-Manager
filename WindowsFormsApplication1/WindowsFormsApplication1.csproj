@@ -94,6 +94,12 @@
     <Compile Include="Loading.Designer.cs">
       <DependentUpon>Loading.cs</DependentUpon>
     </Compile>
+    <Compile Include="loginWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginWindow.Designer.cs">
+      <DependentUpon>loginWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Settings.cs" />
     <Compile Include="welcomeWindow.cs">
       <SubType>Form</SubType>
@@ -107,11 +113,11 @@
     <Compile Include="settingsWindow.Designer.cs">
       <DependentUpon>settingsWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="SSRC.cs">
+    <Compile Include="FieldNoteGenerator.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SSRC.Designer.cs">
-      <DependentUpon>SSRC.cs</DependentUpon>
+    <Compile Include="FieldNoteGenerator.Designer.cs">
+      <DependentUpon>FieldNoteGenerator.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Loading.resx">
       <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginWindow.resx">
+      <DependentUpon>loginWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="welcomeWindow.resx">
       <DependentUpon>welcomeWindow.cs</DependentUpon>
@@ -142,8 +151,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SSRC.resx">
-      <DependentUpon>SSRC.cs</DependentUpon>
+    <EmbeddedResource Include="FieldNoteGenerator.resx">
+      <DependentUpon>FieldNoteGenerator.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest">
       <SubType>Designer</SubType>

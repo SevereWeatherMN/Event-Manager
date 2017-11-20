@@ -41,21 +41,22 @@
             this.richTextBox1.Location = new System.Drawing.Point(12, 22);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(399, 80);
+            this.richTextBox1.Size = new System.Drawing.Size(399, 94);
             this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "Codename Stratus\nBuild: v0.5.0\nDate: 2017-10-01\nCreated By: SevereWeatherMN Devel" +
-    "opment Team";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            this.richTextBox1.Text = "Codename Stratus\nBuild: v0.5.0\nDate: 2017-11-8\nCreated By: SevereWeatherMN Develo" +
+    "pment Team\nhttps://severeweathermn.wixsite.com/mysite";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.RichTextBox1_TextChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(337, 108);
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button1.Location = new System.Drawing.Point(337, 129);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
             this.button1.Text = "Exit";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // aboutWindow
             // 
@@ -63,13 +64,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.button1;
-            this.ClientSize = new System.Drawing.Size(424, 143);
+            this.ClientSize = new System.Drawing.Size(424, 164);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.richTextBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "aboutWindow";
             this.Text = "About";
-            this.Load += new System.EventHandler(this.aboutWindow_Load);
+            this.Load += new System.EventHandler(this.AboutWindow_Load);
             this.ResumeLayout(false);
 
         }
