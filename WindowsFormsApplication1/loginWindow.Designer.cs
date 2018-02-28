@@ -55,6 +55,7 @@
             this.UserButton.TabIndex = 3;
             this.UserButton.Text = "Create User";
             this.UserButton.UseVisualStyleBackColor = true;
+            this.UserButton.Click += new System.EventHandler(this.UserButton_Click);
             // 
             // label1
             // 
@@ -78,6 +79,7 @@
             this.label2.Size = new System.Drawing.Size(325, 25);
             this.label2.TabIndex = 5;
             this.label2.Text = "Please login or create a user profile. ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // LoginBoxLabel
             // 
@@ -98,6 +100,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(261, 21);
             this.comboBox1.TabIndex = 8;
+            this.comboBox1.Text = "Select a user from the list...";
             // 
             // loginWindow
             // 
@@ -113,8 +116,10 @@
             this.Controls.Add(this.UserButton);
             this.Controls.Add(this.loginButton);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "loginWindow";
-            this.Text = "loginWindow";
+            this.Text = "Weather Event Manager";
             this.ResumeLayout(false);
             this.PerformLayout();
 

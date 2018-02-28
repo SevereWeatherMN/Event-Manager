@@ -10,25 +10,19 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class loginWindow : Form
+    public partial class UserWindow : Form
     {
-        public loginWindow()
+        public UserWindow()
         {
             InitializeComponent();
         }
 
-        private void LoginButton_Click(object sender, EventArgs e)
+        private void UserWindow_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void UserButton_Click(object sender, EventArgs e)
-        {
-            UserWindow uw = new UserWindow();
-            uw.Show();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
 
         }

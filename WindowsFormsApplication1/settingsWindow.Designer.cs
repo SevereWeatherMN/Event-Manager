@@ -51,6 +51,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.textBoxTZSelected = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // instructionTxt
@@ -273,6 +274,16 @@
             this.textBoxTZSelected.Size = new System.Drawing.Size(284, 13);
             this.textBoxTZSelected.TabIndex = 81;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(171, 321);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(79, 23);
+            this.button2.TabIndex = 83;
+            this.button2.Text = "loginWindow";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // settingsWindow
             // 
             this.AcceptButton = this.buttonSave;
@@ -280,6 +291,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;
             this.ClientSize = new System.Drawing.Size(424, 351);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.textBoxTZSelected);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -334,5 +346,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBoxTZSelected;
+        private System.Windows.Forms.Button button2;
     }
 }

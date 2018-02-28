@@ -176,5 +176,6 @@ C:\Users\Cameron\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Deb
 C:\Users\Cameron\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\Cameron\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
 C:\Users\Cameron\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FieldNoteGenerator.resources
-C:\Users\Cameron\Documents\GitHub\Event-Manager\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.CodeAnalysisLog.xml
-C:\Users\Cameron\Documents\GitHub\Event-Manager\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.lastcodeanalysissucceeded
+C:\Users\Cameron\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Cameron\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.loginWindow.resources
+C:\Users\Cameron\Documents\GitHub\Event-Manager\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.userWindow.resources
