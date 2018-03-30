@@ -53,9 +53,7 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.buttonReturnFN = new System.Windows.Forms.Button();
             this.buttonExitFN = new System.Windows.Forms.Button();
-            this.labelOutputName = new System.Windows.Forms.Label();
             this.instructionTxt = new System.Windows.Forms.Label();
-            this.richTextBoxFileName = new System.Windows.Forms.RichTextBox();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.folderBrowserDialog2 = new System.Windows.Forms.FolderBrowserDialog();
             this.folderBrowserDialog3 = new System.Windows.Forms.FolderBrowserDialog();
@@ -85,6 +83,7 @@
             this.comboBoxMonth = new System.Windows.Forms.ComboBox();
             this.comboBoxDay = new System.Windows.Forms.ComboBox();
             this.checkBoxDate = new System.Windows.Forms.CheckBox();
+            this.labelNameReminder = new System.Windows.Forms.RichTextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -274,7 +273,7 @@
             // label12
             // 
             this.label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label12.Location = new System.Drawing.Point(16, 556);
+            this.label12.Location = new System.Drawing.Point(13, 555);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(458, 2);
             this.label12.TabIndex = 34;
@@ -303,18 +302,6 @@
             this.buttonExitFN.UseVisualStyleBackColor = true;
             this.buttonExitFN.Click += new System.EventHandler(this.buttonExit_Click);
             // 
-            // labelOutputName
-            // 
-            this.labelOutputName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelOutputName.AutoSize = true;
-            this.labelOutputName.Location = new System.Drawing.Point(17, 574);
-            this.labelOutputName.Name = "labelOutputName";
-            this.labelOutputName.Size = new System.Drawing.Size(87, 13);
-            this.labelOutputName.TabIndex = 38;
-            this.labelOutputName.Text = "Output Filename:";
-            this.toolTip1.SetToolTip(this.labelOutputName, "The name of the Field Note goes here.");
-            // 
             // instructionTxt
             // 
             this.instructionTxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -327,18 +314,6 @@
             this.instructionTxt.TabIndex = 0;
             this.instructionTxt.Text = resources.GetString("instructionTxt.Text");
             this.instructionTxt.Click += new System.EventHandler(this.instructionTxt_Click);
-            // 
-            // richTextBoxFileName
-            // 
-            this.richTextBoxFileName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBoxFileName.Location = new System.Drawing.Point(109, 571);
-            this.richTextBoxFileName.Name = "richTextBoxFileName";
-            this.richTextBoxFileName.Size = new System.Drawing.Size(363, 20);
-            this.richTextBoxFileName.TabIndex = 39;
-            this.richTextBoxFileName.Text = "";
-            this.richTextBoxFileName.WordWrap = false;
-            this.richTextBoxFileName.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged_1);
             // 
             // richTextBoxExpt
             // 
@@ -636,14 +611,31 @@
             this.checkBoxDate.UseVisualStyleBackColor = true;
             this.checkBoxDate.CheckedChanged += new System.EventHandler(this.checkBoxDate_CheckedChanged);
             // 
-            // SSRC
+            // labelNameReminder
+            // 
+            this.labelNameReminder.AcceptsTab = true;
+            this.labelNameReminder.BackColor = System.Drawing.SystemColors.Control;
+            this.labelNameReminder.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.labelNameReminder.Enabled = false;
+            this.labelNameReminder.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.labelNameReminder.Location = new System.Drawing.Point(16, 579);
+            this.labelNameReminder.Name = "labelNameReminder";
+            this.labelNameReminder.ReadOnly = true;
+            this.labelNameReminder.Size = new System.Drawing.Size(456, 32);
+            this.labelNameReminder.TabIndex = 73;
+            this.labelNameReminder.Text = "*The filename will consist of the date, time, and organization tag as specified i" +
+    "n settings.";
+            this.labelNameReminder.TextChanged += new System.EventHandler(this.labelNameReminder_TextChanged);
+            // 
+            // FieldNoteGenerator
             // 
             this.AcceptButton = this.button5;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.CancelButton = this.buttonReturnFN;
             this.ClientSize = new System.Drawing.Size(484, 661);
+            this.Controls.Add(this.labelNameReminder);
             this.Controls.Add(this.checkBoxDate);
             this.Controls.Add(this.comboBoxDay);
             this.Controls.Add(this.comboBoxMonth);
@@ -666,8 +658,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.richTextBoxExpt);
-            this.Controls.Add(this.richTextBoxFileName);
-            this.Controls.Add(this.labelOutputName);
             this.Controls.Add(this.instructionTxt);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.button5);
@@ -686,7 +676,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
-            this.Name = "SSRC";
+            this.Name = "FieldNoteGenerator";
             this.Text = "Field Note Generator";
             this.Load += new System.EventHandler(this.SSRC_Load);
             this.menuStrip1.ResumeLayout(false);
@@ -718,8 +708,6 @@
         private System.Windows.Forms.ToolStripMenuItem saveArchiveAsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Label instructionTxt;
-        private System.Windows.Forms.Label labelOutputName;
-        private System.Windows.Forms.RichTextBox richTextBoxFileName;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog2;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog3;
@@ -753,6 +741,7 @@
         private System.Windows.Forms.ComboBox comboBoxMonth;
         private System.Windows.Forms.ComboBox comboBoxDay;
         private System.Windows.Forms.CheckBox checkBoxDate;
+        private System.Windows.Forms.RichTextBox labelNameReminder;
     }
 }
 

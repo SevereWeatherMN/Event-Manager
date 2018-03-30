@@ -21,6 +21,8 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
+        public int nameint = 0;
+
         private void Archive_Builder_Load (object sender, EventArgs e)
         {
             System.IO.DirectoryInfo di = new DirectoryInfo("C:/tmp");
@@ -45,6 +47,7 @@ namespace WindowsFormsApplication1
             richTextBoxNexrad.Text = Properties.Settings.Default.NEXRADAB;
             richTextBox7Media.Text = Properties.Settings.Default.MediaAB;
             richTextBoxExpt.Text = Properties.Settings.Default.ExportAB;
+            Properties.Settings.Default.ZipFiles = nameint;
         }
 
         private void richTextBox8_TextChanged(object sender, EventArgs e)
@@ -249,38 +252,53 @@ namespace WindowsFormsApplication1
                 string temppath = Path.Combine(@"C:\tmp\Storm Reports", bfile.Name);
                 bfile.CopyTo(temppath, false);
             }
-
-            // Declare path to zip and path to zip to.
-            string zipDir = @"c:/tmp";
-            string zipPath = @richTextBoxExpt.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + "-" + Properties.Settings.Default.FileName.ToString() + ".zip";
-            //Perform zip.
-            ZipFile.CreateFromDirectory(zipDir, zipPath, CompressionLevel.Fastest, false);
-
-
-
             try
             {
+                // Declare path to zip and path to zip to.
+                string zipDir = @"c:/tmp";
+                string zipPath = @richTextBoxExpt.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + "-" + Properties.Settings.Default.FileName.ToString() + ".zip";
+                //Perform zip.
 
-
+                ZipFile.CreateFromDirectory(zipDir, zipPath, CompressionLevel.Fastest, false);
                 using (WebClient client = new WebClient())
                 {
                     client.Credentials = new NetworkCredential(@Properties.Settings.Default.Username.ToString(), @Properties.Settings.Default.Password.ToString());
-                    client.UploadFile(@richTextBoxNetwk.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + "_" + Properties.Settings.Default.FileName.ToString() + ".zip", "STOR", @richTextBoxExpt.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + Properties.Settings.Default.FileName.ToString() + ".zip");
+                    client.UploadFile(@richTextBoxNetwk.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + "_" + Properties.Settings.Default.FileName.ToString() + ".zip", @richTextBoxExpt.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + "-" + Properties.Settings.Default.FileName.ToString() + ".zip");
                 }
 
 
                 {
-                    MessageBox.Show("Operation completed successfully!");
+                    MessageBox.Show("Operation completed successfully!", "Archive Builder", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
 
-            catch
+            catch (System.IO.IOException)
             {
-                MessageBox.Show("Error: the network location was unavailable.");
-            }
-        }
-        
+                int sum;
+                sum = Properties.Settings.Default.ZipFiles + 1;
+                Properties.Settings.Default.ZipFiles = sum;
+                string zipDir = @"c:/tmp";
+                string zipPath = @richTextBoxExpt.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + "-" + Properties.Settings.Default.FileName.ToString() + "-" + 0 + sum + ".zip";
 
+                ZipFile.CreateFromDirectory(zipDir, zipPath, CompressionLevel.Fastest, false);
+                using (WebClient client2 = new WebClient())
+                {
+                    client2.Credentials = new NetworkCredential(@Properties.Settings.Default.Username.ToString(), @Properties.Settings.Default.Password.ToString());
+                    client2.UploadFile(@richTextBoxNetwk.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + "_" + Properties.Settings.Default.FileName.ToString() + "-" + 0 + sum + ".zip", @richTextBoxExpt.Text + "/" + string.Format("{0:yyyy-MM-dd_hh-mm-tt}", DateTime.Now) + "-" + Properties.Settings.Default.FileName.ToString() + "-" + 0 + sum + ".zip");
+                }
+
+
+                {
+                    MessageBox.Show("The generated zip filename already exists. The file has been renamed before uploading in order to eliminate conflicts.", "Archive Builder", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+                System.IO.DirectoryInfo di = new DirectoryInfo("C:/tmp");
+
+                foreach (DirectoryInfo dirdelete in di.GetDirectories())
+                {
+                    dirdelete.Delete(true);
+                }
+        }
 
         private void richTextBox7Media_TextChanged(object sender, EventArgs e)
         {

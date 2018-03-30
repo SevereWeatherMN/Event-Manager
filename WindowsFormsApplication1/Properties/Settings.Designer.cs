@@ -238,5 +238,17 @@ namespace WindowsFormsApplication1.Properties {
                 this["Year"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int ZipFiles {
+            get {
+                return ((int)(this["ZipFiles"]));
+            }
+            set {
+                this["ZipFiles"] = value;
+            }
+        }
     }
 }

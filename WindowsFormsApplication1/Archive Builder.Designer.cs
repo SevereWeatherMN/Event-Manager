@@ -72,6 +72,7 @@
             this.buttonExitAB = new System.Windows.Forms.Button();
             this.buttonReturnAB = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.labelNameReminder = new System.Windows.Forms.RichTextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -258,7 +259,7 @@
             // 
             // buttonFinishAB
             // 
-            this.buttonFinishAB.Location = new System.Drawing.Point(10, 402);
+            this.buttonFinishAB.Location = new System.Drawing.Point(12, 435);
             this.buttonFinishAB.Name = "buttonFinishAB";
             this.buttonFinishAB.Size = new System.Drawing.Size(127, 32);
             this.buttonFinishAB.TabIndex = 58;
@@ -437,7 +438,7 @@
             // buttonExitAB
             // 
             this.buttonExitAB.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonExitAB.Location = new System.Drawing.Point(305, 402);
+            this.buttonExitAB.Location = new System.Drawing.Point(305, 435);
             this.buttonExitAB.Name = "buttonExitAB";
             this.buttonExitAB.Size = new System.Drawing.Size(127, 32);
             this.buttonExitAB.TabIndex = 73;
@@ -449,7 +450,7 @@
             // buttonReturnAB
             // 
             this.buttonReturnAB.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonReturnAB.Location = new System.Drawing.Point(157, 402);
+            this.buttonReturnAB.Location = new System.Drawing.Point(157, 435);
             this.buttonReturnAB.Name = "buttonReturnAB";
             this.buttonReturnAB.Size = new System.Drawing.Size(127, 32);
             this.buttonReturnAB.TabIndex = 74;
@@ -458,13 +459,30 @@
             this.buttonReturnAB.UseVisualStyleBackColor = true;
             this.buttonReturnAB.Click += new System.EventHandler(this.buttonReturnAB_Click);
             // 
+            // labelNameReminder
+            // 
+            this.labelNameReminder.AcceptsTab = true;
+            this.labelNameReminder.BackColor = System.Drawing.SystemColors.Control;
+            this.labelNameReminder.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.labelNameReminder.Enabled = false;
+            this.labelNameReminder.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.labelNameReminder.Location = new System.Drawing.Point(10, 397);
+            this.labelNameReminder.Name = "labelNameReminder";
+            this.labelNameReminder.ReadOnly = true;
+            this.labelNameReminder.Size = new System.Drawing.Size(456, 32);
+            this.labelNameReminder.TabIndex = 75;
+            this.labelNameReminder.Text = "*The filename will consist of the date, time, and organization tag as specified i" +
+    "n settings.";
+            // 
             // Archive_Builder
             // 
             this.AcceptButton = this.buttonFinishAB;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.CancelButton = this.buttonReturnAB;
-            this.ClientSize = new System.Drawing.Size(442, 449);
+            this.ClientSize = new System.Drawing.Size(442, 479);
+            this.Controls.Add(this.labelNameReminder);
             this.Controls.Add(this.buttonReturnAB);
             this.Controls.Add(this.buttonExitAB);
             this.Controls.Add(this.browseButtonMedia);
@@ -555,6 +573,7 @@
         private System.Windows.Forms.Button buttonExitAB;
         private System.Windows.Forms.Button buttonReturnAB;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.RichTextBox labelNameReminder;
         //private System.Windows.Forms.Button browseButtonExpt;
         //private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
        //browse buttons dont work on archive builder
