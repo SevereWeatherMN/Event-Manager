@@ -3,6 +3,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 
+## 0.5.1 - 2018-3-29
+### Fixed
+-Archive Builder successfully uploads zip files now, HOWEVER two files generated within the same minute have the same name. This will need to be fixed in future builds.
+
+### Needs Fixing:
+- Location isn't detected in Field Note Generator: should the program detect coordinates, or general location? Should settings ask the user this?
+
 ## Unreleased
 - Ability to sign in with a username and password in order to retrieve personal settings
 - GUI and functionality update for Archive Builder
